@@ -31,7 +31,7 @@ const BookComponent = (bookObj) => {
     {videoLink && <p className='title'>Quick Demo About This Book</p>}
     {
       videoLink && <div id="video-background">
-        <iframe title="video" id="youtube-background-video" src={`https://www.youtube.com/embed/${videoLink}?autoplay=1&mute=1&loop=1&playlist=Joi2GoWU3JU&controls=0&showinfo=0&autohide=1&modestbranding=1&vq=hd1080`} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe title="video" id="youtube-background-video" src={`https://www.youtube.com/embed/${videoLink}?autoplay=1&mute=1&loop=1&playlist=${videoLink}&controls=0&showinfo=0&autohide=1&modestbranding=1&vq=hd1080`} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
     }
     {<p className='title'>Available at</p>}
