@@ -1,29 +1,32 @@
 import React from 'react';
 import './QuotesPage.css';
+import quotes1 from "../../images/quote.png";
+import quotes2 from "../../images/quote2.png";
+import quotes3 from "../../images/quote3.png";
+
 
 const quotesData = [
   {
-    imageUrl: 'https://placehold.co/400',
-    downloadLink: 'https://placehold.co/400',
+    imageUrl: quotes1,
+    downloadLink: quotes1,
   },
   {
-    imageUrl: 'https://placehold.co/400',
-    downloadLink: 'https://placehold.co/400',
+    imageUrl: quotes2,
+    downloadLink: quotes2,
   },
   {
-    imageUrl: 'https://placehold.co/400',
-    downloadLink: 'https://placehold.co/400',
+    imageUrl: quotes3,
+    downloadLink: quotes3,
   }, {
-    imageUrl: 'https://placehold.co/400',
-    downloadLink: 'https://placehold.co/400',
+    imageUrl: quotes1,
+    downloadLink: quotes1,
   }, {
-    imageUrl: 'https://placehold.co/400',
-    downloadLink: 'https://placehold.co/400',
+    imageUrl: quotes2,
+    downloadLink: quotes1,
   }, {
-    imageUrl: 'https://placehold.co/400',
-    downloadLink: 'https://placehold.co/400',
+    imageUrl: quotes3,
+    downloadLink: quotes3
   },
-  // Add more quotes as needed
 ];
 
 const QuotesPage = () => {
