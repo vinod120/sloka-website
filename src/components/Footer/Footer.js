@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.css"; // Import the CSS file
 import navigationData from "../../utils/navigationData";
 import footerIcons from "../../utils/footerIcons";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -13,10 +14,10 @@ const Footer = () => {
         <div className="footer-links">
           <ul>
             {navigationData.map(menu =>
-              <li key={menu.icon}>
-                <a href={menu.path}>
+              <li key={menu.name}>
+                <Link to={menu.path}>
                   {menu.name}
-                </a>
+                </Link>
               </li>
             )}
           </ul>
