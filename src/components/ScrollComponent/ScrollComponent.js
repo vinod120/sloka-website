@@ -21,7 +21,7 @@ function ScrollComponent(props) {
                 autoPlay
                 infiniteLoop
                 centerMode={true}
-                centerSlidePercentage={100} // Shows 3 items (100% / 3 = 33.33%)
+                centerSlidePercentage={33} // Shows 3 items (100% / 3 = 33.33%)
                 showThumbs={false}
                 onClickItem={(e) => onLinkClick(e)} >
                 {content.map((obj, index) => {
