@@ -1,0 +1,72 @@
+.quotes-container {
+  background-color: #f9f9f9;
+  border-left: 4px solid #ddd;
+  padding: 5px;
+  margin: 2rem auto;
+  max-width: 50%;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  line-height: 1.6;
+}
+.quotes-content {
+  font-family: 'Georgia', serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  padding: 5px;
+  margin: 2rem auto;
+  max-width: 80%;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  line-height: 1.6;
+  position: relative;
+}
+
+blockquote {
+  margin: 0;
+  padding-left: 0.5rem;
+}
+
+.quotes-content blockquote::before {
+  content: open-quote;
+  font-size: 3rem;
+  color: #aaa;
+  position: absolute;
+  left: -1rem;
+  top: -1.5rem;
+}
+
+.quotes-content blockquote::after {
+  content: close-quote;
+  font-size: 3rem;
+  color: #aaa;
+  position: absolute;
+}
+
+.author {
+  margin-top: 1rem;
+  text-align: right;
+  font-style: normal;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .quotes-content {
+    font-size: 1rem;
+    max-width: 80%;
+  }
+  .quotes-container {
+    border-left: none;
+    max-width: 60%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .quotes-content {
+    font-size: 1rem;
+  }
+  .quotes-container {
+    border-left: none;
+    max-width: 80%;
+  }
+}

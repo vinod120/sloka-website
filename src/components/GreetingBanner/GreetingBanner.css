@@ -1,0 +1,30 @@
+.greeting-container {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInUp 0.9s ease forwards;
+  height: 350px;
+  background-color: #017fa1;
+  padding: 4rem;
+}
+.greeting-title {
+  font-size: 40pt;
+  font-family: "Nerko One", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+@media screen and (max-width: 426px) {
+  .greeting-title {
+    font-size: 16pt;
+  }
+}
+/* Define the keyframe animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
