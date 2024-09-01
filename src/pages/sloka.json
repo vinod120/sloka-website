@@ -1,0 +1,97 @@
+{
+    "homepage": [
+        {
+            "renderType": "left_image_rigth_text",
+            "title": "Welcome",
+            "content": [
+                "Dr. Sloka, a pen name for Dr. Sukesh Krishna Chaitanya Loka, professionally is a Clinical Pharmacologist and a freelance Clinical Psychologist. In short, he is a Med and Mind Mentor! By Passion, he is a poet, artist, writer and now, an author too!",
+                "Dr. Sloka carries with him over 9+ years of experience in providing Medication Therapy Management services across various specialties such as Allergy and Immunology, Critical Care, General Medicine, Nephrology, Oncology, Organ Transplantation, Pulmonology, and many more of such interesting specialties. He served in various multi-specialty hospitals in India where he played a key role in several clinical and operational projects such as digital prescription, nursing and e-health pharmacy projects.",
+                "He is a medical trainer, and had trained over hundreds of healthcare professionals including consultants, junior doctors, medicos, nurses, pharmacists, and was also the faculty member for the students of MBA- Hospital and Healthcare Management at Krishna Institute of Medical Sciences, one of the study centres of Dr B. R. Ambedkar Open University.",
+                "He underwent a course of Mindfulness Based Cognitive Therapy (MBCT) by the TEWV NHS foundation trust, and Suicide Prevention by the “If u care share” foundation in the United Kingdom. He was also trained in Cognitive Behavioral Therapy (CBT), self-compassion, HIV Counselling, arts therapy, and psychosexual therapy. ",
+                "Dr. Sloka has worked with clients facing an array of mental health challenges, including anxiety, depression, panic attacks, and obsessive-compulsive disorder (OCD), stress, relationship difficulties, and sexual issues and many others. ",
+                "In addition to his clinical work, his research in the realm of mental health is both extensive and varied. Notably, he has delved into the impact of managerial personalities on the job satisfaction of employees in the workplace. This exploration illustrates his commitment to fostering healthier and more harmonious work environments. Dr. Sloka has also presented numerous lectures on the subject of mental health, further contributing to the awareness on mental well-being."
+            ]
+        },
+        {
+            "renderType": "left_image_rigth_text",
+            "title": "I will give the mock up for the book, links and the Youtube video trailer for this book"
+        },
+        {
+            "renderType": "scroll_images",
+            "title": "Books",
+            "content": [
+                {
+                    "image": "/images/not_just_sadness.jpg",
+                    "path": "/books/1",
+                    "alt": "not_just_sadness"
+                },
+                {
+                    "image": "/images/the_unspoken_thoughts.jpg",
+                    "path": "/books/2",
+                    "alt": "the_unspoken_thoughts"
+                },
+                {
+                    "image": "/images/not_just_sadness.jpg",
+                    "path": "/books/1",
+                    "alt": "not_just_sadness"
+                },
+                {
+                    "image": "/images/the_unspoken_thoughts.jpg",
+                    "path": "/books/2",
+                    "alt": "the_unspoken_thoughts"
+                }
+            ]
+        }
+    ],
+    "books": [
+        {
+            "image": {
+                "src": "/images/not_just_sadness.jpg",
+                "className": "homepage-left-side-image",
+                "alt": "not_just_sadness"
+            },
+            "title": "Not Just Sadness:",
+            "titleSuffix": "The Silence Needs To Be Heard",
+            "content": [
+                "Depression isn’t just sadness, but is a battle that affects people from all walks of life. Yet, despite its prevalence, depression remains covered in stigma and misunderstanding. This book “Not Just Sadness: The Silence Needs to Be Heard” offers an easy understanding of the complexities of depression, from its causes to its myriad manifestations. It also gives insights into practical strategies for offering support.",
+                "Through this book, the author voices out that together, we can break the stigma, and make a difference to create a mentally healthy world."
+            ],
+            "videoLink": "Joi2GoWU3JU",
+            "links": [
+                {
+                    "link": "https://blueroseone.com/store/product/not-just-sadness-the-silence-needs-to-be-heard",
+                    "image": "/images/book_leaf.png"
+                },
+                {
+                    "link": "https://amzn.in/d/6eCCDpT",
+                    "image": "/images/amazon_logo.png"
+                },
+                {
+                    "image": "/images/flipkart_logo.png",
+                    "link": "https://www.flipkart.com/not-just-sadness-silence-needs-heard/p/itm111d9bbc7ea30?pid=9789362614483&lid=LSTBOK9789362614483C9VTHX&marketplace=FLIPKART&cmpid=content_book_8965229628_gmc"
+                }
+            ]
+        },
+        {
+            "links": [
+                {
+                    "link": "https://amzn.eu/d/1WJz0Fp",
+                    "image": "/images/amazon_logo.png"
+                },
+                {
+                    "link": "https://ebooks.bookleafpub.com/product-page/the-unspoken-thoughts",
+                    "image": "/images/book_leaf.png"
+                }
+            ],
+            "image": {
+                "src": "/images/the_unspoken_thoughts.jpg",
+                "className": "homepage-left-side-image",
+                "alt": "the_unspoken_thoughts"
+            },
+            "title": "The Unspoken Thoughts",
+            "content": [
+                "I am a firm believer that we cannot control our thoughts and they're like the flow of a river, sometimes cool and calm, sometimes rippling. Once we tend to start accepting, acknowledging them as the way they're and reflecting on them, the beauty in them is felt and they become the best to lose in them. Words can be another best of our friends to add beauty to those thoughts and feelings generated by them. This book is a collection of many such unspoken thoughts passing through the layers of my mind, coated with the words and then stuck on to the paper to freeze them"
+            ]
+        }
+    ]
+}
