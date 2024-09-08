@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./HomePage.css";
 import GreetingBanner from "../../components/GreetingBanner/GreetingBanner";
 import WelcomeBanner from "../../components/WelcomeBanner.js/WelcomeBanner";
@@ -17,6 +17,7 @@ const HomePage = () => {
     return <></>
   })
   return (
+
     <div className="homepage-container">
       <GreetingBanner />
       <WelcomeBanner />

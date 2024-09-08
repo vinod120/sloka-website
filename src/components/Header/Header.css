@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 2rem;
-  background-color: #f8f8f8;
+  background-color: #ffffff;
   border-bottom: 1px solid #ddd;
   width: 100%;
   transition: padding 0.3s ease;
@@ -16,9 +16,11 @@
   left: 0;
   width: 100%;
 }
+
 .header-container a {
   text-decoration: none;
 }
+
 .header-title {
   font-size: 1.5rem;
   color: #333;
@@ -80,7 +82,17 @@
 }
 
 .close-button:hover {
-  color: #007bff; /* Change color on hover */
+  color: #007bff;
+  /* Change color on hover */
+}
+
+.color-007bff {
+  color: #017fa1;
+}
+
+.header-img {
+  border-radius: 50%;
+  margin: -20px;
 }
 
 @media screen and (max-width: 768px) {

@@ -1,0 +1,12 @@
+.articles-page-wrapper {
+    width: 100%;
+    padding: 1rem;
+}
+
+
+.articles-page-content-wrapper {
+    max-width: 1256px;
+    margin: 100px auto ;
+    padding-bottom: 100px;
+    text-align: center;
+}

@@ -6,6 +6,7 @@ import navigationData from '../../utils/navigationData';
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+
   const toggleMenu = () => {
     setIsOpen(prevState => !prevState);
   };
@@ -31,28 +32,29 @@ const Header = () => {
   return (
     <header className="header-container">
       <Link to="/">
-        <h1 className="header-title">Dr. Sloka</h1>
+        {/* <h1 className="header-title">Dr. Sloka</h1> */}
+        <img src='/images/header_logo.png' width={180} height={120} alt='' className='header-img'/>
       </Link>
       <nav className={`header-nav ${isOpen ? 'open' : ''}`}>
         <button className="close-button" onClick={toggleMenu}>
           &times;
         </button>
         <ul>
-          {navigationData.map(menu => (
-            <li key={menu.name}>
+          {navigationData.map(menu => {
+            const cssClass = window.location?.pathname?.includes(menu.path) ? "color-007bff" : ""
+            return <li key={menu.name} className={cssClass}>
               <Link to={menu.path} onClick={toggleMenu}>
                 <i className={`${menu.icon} nav-icon`} /> {menu.name}
               </Link>
             </li>
-          ))}
+          })}
         </ul>
       </nav>
       <button className="menu-button" onClick={toggleMenu}>
         &#9776;
       </button>
-    </header>
+    </header >
   );
 };
 
 export default Header;
-  

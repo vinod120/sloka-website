@@ -5,24 +5,38 @@
   height: 350px;
   background-color: #017fa1;
   padding: 4rem;
+  overflow: hidden;
 }
+
 .greeting-title {
   font-size: 40pt;
   font-family: "Nerko One", cursive;
   font-weight: 400;
   font-style: normal;
+  display: flex;
+  justify-content: center;
+  gap: 310px;
+  flex-direction: row-reverse;
 }
+
+.welcome-img {
+  margin-top: -235px;
+  height: 700px;
+}
+
 @media screen and (max-width: 426px) {
   .greeting-title {
     font-size: 16pt;
   }
 }
+
 /* Define the keyframe animation */
 @keyframes fadeInUp {
   0% {
     opacity: 0;
     transform: translateY(-20px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);

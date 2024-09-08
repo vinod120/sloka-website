@@ -8,7 +8,9 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-content">
-          <h2>Dr Sloka</h2>
+          {/* <h2>Dr Sloka</h2> */}
+        <img src='/images/header_logo1.png' width={250} height={200} alt='' className='header-img1'/>
+
         </div>
         <div className="footer-links">
           <ul>

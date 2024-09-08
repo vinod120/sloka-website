@@ -1,35 +1,42 @@
 .about-container {
   display: flex;
   padding: 4rem;
-  background-color: #fff; /* You can change this to match the background color you want */
+  background-color: #fff;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .about-image {
-  flex: 0 0 40%; /* Image container takes 45% of the width */
-  margin-right: 5%; /* Space between the image and text */
+  flex: 0 0 48%;
+  /* width: 50%; */
 }
+
+.gap-50 {
+  gap: 50px;
+}
+
 .about-image img {
   height: auto;
-  border-radius: 8px; /* Optional: add some border-radius for a more polished look */
-  margin-right: 30px; /* Space between image and text */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add a shadow */
   overflow: hidden;
   position: relative;
-  width: 100%;
   transition-timing-function: ease;
   transition-duration: 0.9s;
   transition-delay: 0.221053s;
   display: block;
   object-fit: cover;
-  height: 40vw;
+  padding: 1.5rem;
 }
+
 .about-text {
-  flex: 0 0 50%; /* Text container takes 45% of the width */
+  flex: 0 0 48%;
+  /* width: 50%; */
 }
+
 .about-text-content {
   line-height: 1.7rem;
   line-break: auto;
 }
+
 .about-text h2 {
   font-size: 2rem;
   margin-bottom: 15px;
@@ -37,25 +44,34 @@
 
 .about-text p {
   font-size: 1.1rem;
-  line-height: 1.6;
+  line-height: 41px;
   margin-bottom: 15px;
 }
+
 .about-title {
   font-size: 30px;
   margin-bottom: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.about-top-img {
+  margin-top: -54px;
 }
 
 @media screen and (max-width: 426px) {
-    .about-image{
-        margin-bottom: 20px;
-        margin-right: unset;
-    }
-    .about-container {
-        flex-direction: column;
-        padding: 2rem;
-    }
-    .about-title {
-        font-size: 20px;
-        font-weight: 600;
-    }
+  .about-image {
+    margin-bottom: 20px;
+    margin-right: unset;
+  }
+
+  .about-container {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .about-title {
+    font-size: 20px;
+    font-weight: 600;
+  }
 }
