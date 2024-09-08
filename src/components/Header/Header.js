@@ -42,8 +42,8 @@ const Header = () => {
         <ul>
           {navigationData.map(menu => {
             const cssClass = window.location?.pathname?.includes(menu.path) ? "color-007bff" : ""
-            return <li key={menu.name} className={cssClass}>
-              <Link to={menu.path} onClick={toggleMenu}>
+            return <li key={menu.name} >
+              <Link to={menu.path} onClick={toggleMenu} className={cssClass}>
                 <i className={`${menu.icon} nav-icon`} /> {menu.name}
               </Link>
             </li>
