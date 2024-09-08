@@ -10,7 +10,7 @@
   margin: auto;
   max-width: 50%;
   border-radius: 4px;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  /* box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; */
   line-height: 1.6;
   text-align: center;
 }

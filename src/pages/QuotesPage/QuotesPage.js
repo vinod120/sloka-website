@@ -34,7 +34,7 @@ const QuotesPage = () => {
     <div className="quotes-main-container">
       {quotesData.map((quote, index) => (
         <div className="quote-card" key={index}>
-          <img src={quote.imageUrl} alt={`Quote ${index + 1}`} />
+          <img src={quote.imageUrl} alt={`Quote ${index + 1}`} loading='lazy' decoding='async' />
           <a
             href={quote.downloadLink}
             download
