@@ -10,7 +10,7 @@ const GreetingBanner = () => {
         <div>I’m here to help you.</div>
         </div>
         
-        <img src="/images/welcome_sloka_img.png"  className="welcome-img" width={500} height={650}/>
+        <img src="/images/welcome_sloka_img.png"  className="welcome-img" width={500} height={650} alt="welcome_sloka"/>
       </div>
     </div>
   );

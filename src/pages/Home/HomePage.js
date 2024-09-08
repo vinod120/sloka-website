@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./HomePage.css";
 import GreetingBanner from "../../components/GreetingBanner/GreetingBanner";
 import WelcomeBanner from "../../components/WelcomeBanner.js/WelcomeBanner";
