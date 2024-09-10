@@ -5,7 +5,7 @@ import navLinks from "../../utils/navLink";
 
 const Header = () => {
   return (
-    <div className="container-fluid nav-bar sticky-top px-4 py-2 py-lg-0">
+    <div className="container-fluid nav-bar sticky-top px-4 py-2 py-lg-0 box-shdw">
       <nav className="navbar navbar-expand-lg navbar-light">
         <NavLink to="/" className="navbar-brand p-0">
           <h1 className="display-6 text-dark">
