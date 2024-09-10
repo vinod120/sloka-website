@@ -1,59 +1,52 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import './Header.css';
-import navigationData from '../../utils/navigationData';
+import React from "react";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-
-  const toggleMenu = () => {
-    setIsOpen(prevState => !prevState);
-  };
-
-  const closeMenu = () => {
-    setIsOpen(false);
-  };
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window?.innerWidth > 426) {
-        closeMenu();
-      }
-    };
-
-    window?.addEventListener('resize', handleResize);
-
-    return () => {
-      window?.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
   return (
-    <header className="header-container">
-      <Link to="/">
-        {/* <h1 className="header-title">Dr. Sloka</h1> */}
-        <img src='/images/header_logo.png' width={180} height={120} alt='' className='header-img'/>
-      </Link>
-      <nav className={`header-nav ${isOpen ? 'open' : ''}`}>
-        <button className="close-button" onClick={toggleMenu}>
-          &times;
+    <div class="container-fluid nav-bar sticky-top px-4 py-2 py-lg-0">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a href="" class="navbar-brand p-0">
+          <h1 class="display-6 text-dark">
+            <i class="fas fa-swimmer text-primary me-3" />Dr. Sloka
+          </h1>
+          {/* <!-- <img src="img/logo.png" alt="Logo"> --> */}
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="fa fa-bars" />
         </button>
-        <ul>
-          {navigationData.map(menu => {
-            const cssClass = window.location?.pathname?.includes(menu.path) ? "color-007bff" : ""
-            return <li key={menu.name} >
-              <Link to={menu.path} onClick={toggleMenu} className={cssClass}>
-                <i className={`${menu.icon} nav-icon`} /> {menu.name}
-              </Link>
-            </li>
-          })}
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item nav-link active">
+              Home
+            </a>
+            <a href="about.html" class="nav-item nav-link">
+              About
+            </a>
+            <a href="service.html" class="nav-item nav-link">
+              Service
+            </a>
+            <a href="blog.html" class="nav-item nav-link">
+              Blog
+            </a>
+
+            <a href="contact.html" class="nav-item nav-link">
+              Contact
+            </a>
+          </div>
+          {/* <div class="team-icon d-none d-xl-flex justify-content-center me-3">
+<a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+<a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+<a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+<a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+</div>
+<a href="#" class="btn btn-primary rounded-pill py-2 px-4 flex-shrink-0">Get Started</a> */}
+        </div>
       </nav>
-      <button className="menu-button" onClick={toggleMenu}>
-        &#9776;
-      </button>
-    </header >
+    </div>
   );
 };
 

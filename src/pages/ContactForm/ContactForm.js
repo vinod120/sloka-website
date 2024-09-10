@@ -1,128 +1,80 @@
-import React, { useState } from "react";
-import "./ContactForm.css";
+import React from 'react'
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-
-  const [errors, setErrors] = useState({});
-
-  const handleChange = e => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const validate = () => {
-    const newErrors = {};
-
-    if (!formData.firstName) {
-      newErrors.firstName = "First name is required";
-    }
-
-    if (!formData.email) {
-      newErrors.email = "Email is required";
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = "Email address is invalid";
-    }
-
-    if (!formData.message) {
-      newErrors.message = "Message is required";
-    }
-
-    return newErrors;
-  };
-
-  const handleSubmit = e => {
-    e.preventDefault();
-    const formErrors = validate();
-    if (Object.keys(formErrors).length === 0) {
-      console.log("Form submitted successfully", formData);
-    } else {
-      setErrors(formErrors);
-    }
-  };
-
   return (
-    <div className="contact-container">
-      <div className="contact-info">
-        <h2>Contact Me</h2>
-        <p>Need guidance or support? Feel free to reach out!</p>
-        <p>I’ll respond promptly. Thank you for your patience.</p>
-      </div>
+    <div class="container-fluid contact py-5">
+    <div class="container py-5">
+        <div class="row g-5"> 
+            <div class="col-12 col-xl-6 wow fadeInUp" data-wow-delay="0.2s">
+                <div>
+                    <div class="pb-5">
+                        <h4 class="text-primary">Get in Touch</h4>
+                        <p class="mb-0">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a class="text-primary fw-bold" href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="d-flex justify-content-around bg-light rounded p-4">
+                                <a class="btn btn-xl-square btn-primary rounded-circle" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-xl-square btn-primary rounded-circle" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-xl-square btn-primary rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-xl-square btn-primary rounded-circle" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="bg-light p-5 rounded h-100">
+                    <h4 class="text-primary mb-4">Send Your Message</h4>
+                    <form>
+                        <div class="row g-4">
+                            <div class="col-lg-12 col-xl-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control border-0" id="name" placeholder="Your Name" />
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-xl-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control border-0" id="email" placeholder="Your Email" />
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-xl-6">
+                                <div class="form-floating">
+                                    <input type="phone" class="form-control border-0" id="phone" placeholder="Phone" />
+                                    <label for="phone">Your Phone</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-xl-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control border-0" id="project" placeholder="Project" />
+                                    <label for="project">Your Project</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control border-0" id="subject" placeholder="Subject" />
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style={{height: "160px"}}></textarea>
+                                    <label for="message">Message</label>
+                                </div>
 
-      <div className="contact-form">
-        <p>Share what brings you here, and I’ll respond promptly.</p>
-        <form onSubmit={handleSubmit}>
-          <div className="form-group">
-            <input
-              type="text"
-              name="firstName"
-              placeholder="First Name"
-              value={formData.firstName}
-              onChange={handleChange}
-              className={errors.firstName ? "input-error" : ""}
-              required
-            />
-            {errors.firstName &&
-              <span className="error">
-                {errors.firstName}
-              </span>}
-            <input
-              type="text"
-              name="lastName"
-              placeholder="Last Name"
-              value={formData.lastName}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="form-group">
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              value={formData.email}
-              onChange={handleChange}
-              className={errors.email ? "input-error" : ""}
-              required
-            />
-            {errors.email &&
-              <span className="error">
-                {errors.email}
-              </span>}
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Phone Number"
-              value={formData.phone}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="form-group">
-            <textarea
-              name="message"
-              placeholder="Your Message"
-              value={formData.message}
-              onChange={handleChange}
-              rows="5"
-              className={errors.message ? "input-error" : ""}
-              required
-            />
-            {errors.message &&
-              <span className="error">
-                {errors.message}
-              </span>}
-          </div>
-          <button type="submit" className="submit-btn">
-            Submit
-          </button>
-        </form>
-      </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3 send-btn">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-  );
-};
+</div>  )
+}
 
-export default ContactForm;
+export default ContactForm
