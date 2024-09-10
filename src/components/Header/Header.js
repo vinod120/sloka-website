@@ -1,15 +1,17 @@
 import React from "react";
+import { NavLink } from "react-router-dom"; // Use NavLink instead of Link
 import "./Header.css";
+import navLinks from "../../utils/navLink";
 
 const Header = () => {
   return (
     <div className="container-fluid nav-bar sticky-top px-4 py-2 py-lg-0">
       <nav className="navbar navbar-expand-lg navbar-light">
-        <a href="" className="navbar-brand p-0">
+        <NavLink to="/" className="navbar-brand p-0">
           <h1 className="display-6 text-dark">
             <i className="fas fa-swimmer text-primary me-3" />Dr. Sloka
           </h1>
-        </a>
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"
@@ -20,22 +22,17 @@ const Header = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <div className="navbar-nav ms-auto py-0">
-            <a href="index.html" className="nav-item nav-link active">
-              Home
-            </a>
-            <a href="about.html" className="nav-item nav-link">
-              About
-            </a>
-            <a href="service.html" className="nav-item nav-link">
-              Service
-            </a>
-            <a href="blog.html" className="nav-item nav-link">
-              Blog
-            </a>
-
-            <a href="contact.html" className="nav-item nav-link">
-              Contact
-            </a>
+            {navLinks?.map((link) =>
+              <NavLink
+                key={link?.name}
+                to={link?.path}
+                className="nav-item nav-link"
+                activeclassname="active"
+                exact="true"
+              >
+                {link?.name}
+              </NavLink>
+            )}
           </div>
         </div>
       </nav>

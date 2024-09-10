@@ -25,7 +25,7 @@ const Blogs = () => {
                 <img
                   src=""
                   className="img-fluid w-100 rounded-top"
-                  alt="Image"
+                  alt="blog"
                   style={{ height: "300px" }}
                 />
                 <div className="blog-category py-2 px-4">Vacation</div>

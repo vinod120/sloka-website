@@ -1,12 +1,17 @@
-const navigationData = [
+const navLinks = [
+  {
+    path: "/",
+    name: "Home",
+    icon: "fas fa-home"
+  },
   {
     path: "/books",
     name: "Books",
     icon: "fas fa-book"
   },
   {
-    path: "/articles",
-    name: "Articles",
+    path: "/blogs",
+    name: "Blogs",
     icon: "fas fa-newspaper"
   },
   {
@@ -25,5 +30,4 @@ const navigationData = [
     icon: "fas fa-envelope"
   }
 ];
-
-export default navigationData;
+export default navLinks;

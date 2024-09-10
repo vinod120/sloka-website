@@ -1,4 +1,5 @@
 import React from "react";
+import socialLinks from "../../utils/socialLinks";
 
 const ContactForm = () => {
   return (
@@ -17,30 +18,18 @@ const ContactForm = () => {
               <div className="row g-4 mt-30">
                 <div className="col-12">
                   <div className="d-flex justify-content-around bg-light rounded p-4">
+                  {socialLinks?.map(item =>
                     <a
+                      key={item.path}
+                      href={item.path}
+                      target="_blank"
+                      rel="noreferrer"
                       className="btn btn-xl-square btn-primary rounded-circle"
-                      href="#"
                     >
-                      <i className="fab fa-facebook-f" />
+                      <i className={`${item.icon} display-7`} />
                     </a>
-                    <a
-                      className="btn btn-xl-square btn-primary rounded-circle"
-                      href="#"
-                    >
-                      <i className="fab fa-twitter" />
-                    </a>
-                    <a
-                      className="btn btn-xl-square btn-primary rounded-circle"
-                      href="#"
-                    >
-                      <i className="fab fa-instagram" />
-                    </a>
-                    <a
-                      className="btn btn-xl-square btn-primary rounded-circle"
-                      href="#"
-                    >
-                      <i className="fab fa-linkedin-in" />
-                    </a>
+                  )}
+                   
                   </div>
                 </div>
               </div>
