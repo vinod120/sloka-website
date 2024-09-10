@@ -2,7 +2,7 @@ import React from "react";
 import OwlCarousel from "react-owl-carousel";
 
 
-const HeaderCarousel = () => {
+const WelcomeBanner = () => {
   return (
     <OwlCarousel
       className="owl-theme header-carousel"
@@ -54,15 +54,10 @@ const HeaderCarousel = () => {
                 style={{ animationDelay: "1s" }}
               >
                 <div className="p-5">
-                  {/* <h2 className="text-dark text-uppercase mb-4">Book Your Ticket</h2>
-                  <form>
-                    <div className="row g-4"> */}
                   <img
                     src="https://drslokauk.netlify.app/images/Author-Image-1.png"
                     alt="profile"
                   />
-                  {/* </div> */}
-                  {/* </form> */}
                 </div>
               </div>
             </div>
@@ -110,15 +105,12 @@ const HeaderCarousel = () => {
                 style={{ animationDelay: "1s" }}
               >
                 <div className="p-5">
-                  {/* <h2 className="text-dark text-uppercase mb-4">Book Your Ticket</h2>
-                  <form>
-                    <div className="row g-4"> */}
+
                   <img
                     src="https://drslokauk.netlify.app/images/Author-Image-1.png"
                     alt="profile"
                   />
-                  {/* </div> */}
-                  {/* </form> */}
+
                 </div>
               </div>
             </div>
@@ -129,4 +121,4 @@ const HeaderCarousel = () => {
   );
 };
 
-export default HeaderCarousel;
+export default WelcomeBanner;

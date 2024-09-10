@@ -4,9 +4,9 @@ const BackToTop = () => {
   return (
     <a
       href="#"
-      class="btn btn-primary btn-lg-square rounded-circle back-to-top"
+      className="btn btn-primary btn-lg-square rounded-circle back-to-top"
     >
-      <i class="fa fa-arrow-up" />
+      <i className="fa fa-arrow-up" />
     </a>
   );
 };

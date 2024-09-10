@@ -6,20 +6,13 @@ import "./common/styles.css";
 import WOW from 'wowjs';
 import { Waypoint } from "react-waypoint";
 import $ from "jquery";
-import 'animate.css';
+import Blogs from "./pages/Blogs/Blogs";
+import Books from "./pages/Books/Books";
+import ContactForm from "./pages/ContactForm/ContactForm";
+import QuotesPage from "./pages/QuotesPage/QuotesPage";
+import AboutMe from "./pages/AboutMe/AboutMe";
 
 const App = () => {
-    useEffect(() => {
-        const spinner = () => {
-            setTimeout(() => {
-                const spinnerElement = document.getElementById("spinner");
-                if (spinnerElement) {
-                    spinnerElement.classList.remove("show");
-                }
-            }, 10);
-        };
-        spinner();
-    }, []);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -80,12 +73,12 @@ const App = () => {
             <Layout>
                 <Routes>
                     <Route path="/" element={<HomePage />} />
-                    {/* <Route path="/articles" element={<Articles />} />
-          <Route path="/books/:id" element={<Books />} />
-          <Route path="/books" element={<Books />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact-us" element={<ContactForm />} />
-          <Route path="/quotes" element={<QuotesPage />} /> */}
+                    <Route path="/blogs" element={<Blogs />} />
+                    <Route path="/books/:id" element={<Books />} />
+                    <Route path="/books" element={<Books />} />
+                    <Route path="/about" element={<AboutMe />} />
+                    <Route path="/contact-us" element={<ContactForm />} />
+                    <Route path="/quotes" element={<QuotesPage />} />
                 </Routes>
             </Layout>
         </Router>
