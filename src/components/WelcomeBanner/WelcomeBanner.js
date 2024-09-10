@@ -1,6 +1,6 @@
 import React from "react";
 import OwlCarousel from "react-owl-carousel";
-
+import "./WelcomeBanner.css"; 
 
 const WelcomeBanner = () => {
   return (
@@ -20,7 +20,11 @@ const WelcomeBanner = () => {
     >
       {/* First Carousel Item */}
       <div className="header-carousel-item">
-        <img src="" className="img-fluid w-100" alt="Image" />
+        <img
+          src="https://drslokauk.netlify.app/images/header_logo.png"
+          className="img-fluid w-100"
+          alt="Image"
+        />
         <div className="carousel-caption">
           <div className="container align-items-center py-4">
             <div className="row g-5 align-items-center">
@@ -28,16 +32,12 @@ const WelcomeBanner = () => {
                 className="col-xl-7 fadeInLeft animated"
                 style={{ animationDelay: "1s" }}
               >
-                <div className="text-start">
-                  <h4 className="text-primary  fw-bold mb-4">
-                    Hello, I’m Dr Sloka. I’m here to help you.
-                  </h4>
-                  <h1 className="text-white mb-4">
-                    Hello, I’m Dr Sloka. I’m here to help you.k
+                <div className="text-start ">
+                  <h1 className="text-white mb-4 welcome-text-style">
+                    Hello, I’m Dr Sloka. I’m here to help you
                   </h1>
-                  <p className="mb-4 fs-5">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry...
+                  <p className="mb-4 fs-6 welcome-text-content">
+                  Dr. Sloka, a pen name for Dr. Sukesh Krishna Chaitanya Loka, professionally is a Clinical Pharmacologist and a freelance Clinical Psychologist. In short, he is a Med and Mind Mentor! By Passion, he is a poet, artist, writer and now, an author too! Dr. Sloka carries with him over 9+ years of experience in providing Medication Therapy Management services across various specialties such as Allergy and Immunology, Critical Care, General Medicine, Nephrology, Oncology, Organ Transplantation, Pulmonology, and many more of such interesting specialties. He served in various multi-specialty hospitals in India where he played a key role in several clinical and operational projects such as digital prescription, nursing and e-health pharmacy projects.
                   </p>
                   <div className="d-flex flex-shrink-0">
                     <a
@@ -68,9 +68,9 @@ const WelcomeBanner = () => {
       {/* Second Carousel Item */}
       <div className="header-carousel-item">
         <img
-          src="https://drslokauk.netlify.app/images/header_logo.png"
+          src="https://drslokauk.netlify.app/images/Author-Image-1.png"
           className="img-fluid w-100"
-          alt="Image"
+          alt="Image-text"
         />
         <div className="carousel-caption">
           <div className="container py-4">
@@ -79,16 +79,12 @@ const WelcomeBanner = () => {
                 className="col-xl-7 fadeInLeft animated"
                 style={{ animationDelay: "1s" }}
               >
-                <div className="text-start">
-                  <h4 className="text-primary fw-bold mb-4">
-                    Hello, I’m Dr Sloka. I’m here to help you.
-                  </h4>
-                  <h1 className="text-white mb-4">
+                <div className="text-start ">
+                  <h1 className="text-white mb-4 welcome-text-style">
                     Hello, I’m Dr Sloka. I’m here to help you.
                   </h1>
-                  <p className="mb-4 fs-5">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry...
+                  <p className="mb-4 fs-6 welcome-text-content">
+                  Dr. Sloka, a pen name for Dr. Sukesh Krishna Chaitanya Loka, professionally is a Clinical Pharmacologist and a freelance Clinical Psychologist. In short, he is a Med and Mind Mentor! By Passion, he is a poet, artist, writer and now, an author too! Dr. Sloka carries with him over 9+ years of experience in providing Medication Therapy Management services across various specialties such as Allergy and Immunology, Critical Care, General Medicine, Nephrology, Oncology, Organ Transplantation, Pulmonology, and many more of such interesting specialties. He served in various multi-specialty hospitals in India where he played a key role in several clinical and operational projects such as digital prescription, nursing and e-health pharmacy projects.
                   </p>
                   <div className="d-flex flex-shrink-0">
                     <a
@@ -105,12 +101,11 @@ const WelcomeBanner = () => {
                 style={{ animationDelay: "1s" }}
               >
                 <div className="p-5">
-
                   <img
-                    src="https://drslokauk.netlify.app/images/Author-Image-1.png"
+                    src="https://drslokauk.netlify.app/images/header_logo.png"
+                    style={{ opacity: "0.5" }}
                     alt="profile"
                   />
-
                 </div>
               </div>
             </div>

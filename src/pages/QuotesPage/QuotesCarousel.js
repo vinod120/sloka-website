@@ -1,6 +1,6 @@
 import React from "react";
 import OwlCarousel from "react-owl-carousel";
-
+import ring from "../../images/dr2.jpg"
 const QuotesCarousel = () => {
   return (
     <div className="container-fluid testimonial py-5">
@@ -12,7 +12,7 @@ const QuotesCarousel = () => {
           style={{ maxWidth: "800px" }}
         >
           <h4 className="text-primary">Dr. Sloka's </h4>
-          <h1 className="display-5 text-white mb-4">TREDING QUOTES</h1>
+          <h1 className="display-5 text-white mb-4">TRENDING QUOTES</h1>
         </div>
 
         {/* Owl Carousel */}
@@ -37,13 +37,13 @@ const QuotesCarousel = () => {
           {/* Testimonial 2 */}
           <div className="testimonial-item p-4">
             <p className="text-white fs-4 mb-4">
-              Read as if you're finding the writer's heart Write like you're
+              Read as if you're finding the writer's heart <br />Write like you're
               reading the reader's mind
             </p>
             <div className="testimonial-inner d-flex">
               <div className="testimonial-img">
                 <img
-                  src="img/testimonial-2.jpg"
+                  src={ring}
                   className="img-fluid"
                   alt="Testimonial"
                 />

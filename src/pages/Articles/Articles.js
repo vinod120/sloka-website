@@ -1,6 +1,6 @@
 import React from "react";
 
-const Blogs = () => {
+const Articles = () => {
   return (
     <div className="container-fluid blog pb-5">
       <div className="container pb-5">
@@ -88,4 +88,4 @@ const Blogs = () => {
   );
 };
 
-export default Blogs;
+export default Articles;

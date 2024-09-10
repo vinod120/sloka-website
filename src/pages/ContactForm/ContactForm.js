@@ -12,7 +12,7 @@ const ContactForm = () => {
                 <p className="mb-0">
                   Need guidance or support? Feel free to reach out!
                   <br />
-                  I’ll respond promptly. Thank you htmlFor your patience.
+                  I’ll respond promptly. Thank you for your patience.
                 </p>
               </div>
               <div className="row g-4 mt-30">

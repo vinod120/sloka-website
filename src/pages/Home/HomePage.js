@@ -4,7 +4,7 @@ import WelcomeBanner from "../../components/WelcomeBanner/WelcomeBanner";
 import Specialization from "../../components/Specialization/Specialization";
 import BooksCarousel from "../Books/BooksCarousel";
 import QuotesCarousel from "../QuotesPage/QuotesCarousel";
-import BlogsCarousel from "../Blogs/BlogsCarousel";
+import ArticlesCarousel from "../Articles/ArticlesCarousel";
 
 const HomePage = () => {
   return (
@@ -13,7 +13,7 @@ const HomePage = () => {
       <Specialization />
       <BooksCarousel />
       <QuotesCarousel />
-      <BlogsCarousel />
+      <ArticlesCarousel />
       <ContactForm />
     </>
   );

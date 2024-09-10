@@ -1,9 +1,9 @@
 import React from "react";
-import "./Blogs.css";
+import "./Articles.css";
 
-const BlogsCarousel = () => {
+const ArticlesCarousel = () => {
   return (
-    <div className="container-fluid blog pb-5">
+    <div className="container-fluid blog pb-5 mt-5">
       <div className="container pb-5">
         <div
           className="text-center mx-auto pb-5 wow fadeInUp"
@@ -12,19 +12,19 @@ const BlogsCarousel = () => {
         >
           <h4 className="text-primary">Our Blog</h4>
           <h1 className="display-5 mb-4">Latest Blog & Articles</h1>
-          <p className="mb-0">
+          {/* <p className="mb-0">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
             adipisci facilis cupiditate recusandae aperiam temporibus corporis
             itaque quis facere, numquam, ad culpa deserunt sint dolorem autem
             obcaecati, ipsam mollitia hic.
-          </p>
+          </p> */}
         </div>
         <div className="row g-4 justify-content-center">
           <div className="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
             <div className="blog-item">
               <div className="blog-img">
                 <img
-                  src=""
+                  src="https://placehold.co/400"
                   className="img-fluid w-100 rounded-top"
                   alt="blog"
                   style={{ height: "300px" }}
@@ -55,4 +55,4 @@ const BlogsCarousel = () => {
   );
 };
 
-export default BlogsCarousel;
+export default ArticlesCarousel;

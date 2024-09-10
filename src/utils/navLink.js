@@ -10,8 +10,8 @@ const navLinks = [
     icon: "fas fa-book"
   },
   {
-    path: "/blogs",
-    name: "Blogs",
+    path: "/articles",
+    name: "Articles",
     icon: "fas fa-newspaper"
   },
   {
