@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import socialLinks from "../../utils/socialLinks";
 
 const ContactForm = () => {
+  useEffect(()=>{
+    window.scrollTo(0,0)
+
+  },[])
   return (
     <div className="container-fluid contact py-5">
       <div className="container py-5">

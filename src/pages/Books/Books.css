@@ -1,4 +1,4 @@
-/* @import url('https://fonts.cdnfonts.com/css/signature-of-the-ancient');
+@import url('https://fonts.cdnfonts.com/css/signature-of-the-ancient');
 
 .books-page-wrapper {
     width: 100%;
@@ -12,11 +12,13 @@
     text-align: center;
 }
 
-.book-highlight-wrapper {
+.book-highlight-wrapper1 {
     background-image: url('../../../public//images/book_self.jpg');
     width: 50%;
     display: flex;
+    height: 500px;
     justify-content: center;
+    align-items: center;
 }
 
 #video-background {
@@ -30,13 +32,101 @@
     pointer-events: none;
 }
 
-@media screen and (max-width:579.98px) {
-    .left-side-rigth-text-wrapper {
+.scroll-component-home {
+    max-width: 1256px;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+}
+
+.scroll-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.figure {
+    width: 50%;
+    height: 400px;
+}
+
+.carousel-caption .cover {
+    width: 100%;
+}
+
+.link-figure-wrapper {
+    height: 100px;
+}
+
+figure {
+    perspective: 1400px;
+    position: relative;
+    margin: 30px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+figure::before {
+    content: '';
+    position: absolute;
+    box-shadow: inset 20px 0px 21px -10px rgba(255, 255, 255, .1), inset 13px 0px 21px -10px rgba(0, 0, 0, .3);
+    pointer-events: none;
+    z-index: 20;
+    transform-origin: 0% 50%;
+    transition: transform .6s ease;
+}
+
+figure:hover::before {
+    transform: rotateY(-10deg);
+}
+
+img.cover {
+    display: block;
+    transform-origin: 0% 50%;
+    transition: all .6s ease;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .2);
+    position: relative;
+    z-index: 2;
+}
+
+.cover:hover {
+    transform: rotateY(-10deg);
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, .2);
+}
+
+figure.open .carousel .slide .figure .cover {
+    transform: rotateY(-180deg);
+}
+
+.blog-content {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: var(--bs-light);
+}
+
+@media screen and (max-width:991.98px) {
+    figure {
+        background-color: transparent;
+    }
+
+    .books-page-content-wrapper .left-side-rigth-text-wrapper {
         flex-direction: column;
     }
 
-    .book-highlight-wrapper {
+    .books-page-content-wrapper .book-highlight-wrapper1 {
         width: 100%;
     }
 
-} */
+}
+
+@media screen and (max-width:575.98px) {
+
+    .book-highlight-wrapper1 .figure {
+        height: auto;
+
+    }
+
+    .book-highlight-wrapper1 img.cover {
+        height: 280px;
+        width: 200px;
+    }
+}
