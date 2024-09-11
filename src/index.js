@@ -6,8 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./custom.scss";
 import 'animate.css'; 
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
