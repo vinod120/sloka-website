@@ -11,6 +11,10 @@ import ContactForm from "./pages/ContactForm/ContactForm";
 import QuotesPage from "./pages/QuotesPage/QuotesPage";
 import AboutMe from "./pages/AboutMe/AboutMe";
 import Articles from "./pages/Articles/Articles";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/autoplay";
+import "swiper/css/effect-fade";
 
 const App = () => {
 
