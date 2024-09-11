@@ -220,31 +220,6 @@
   background: var(--bs-white);
   color: var(--bs-primary);
 }
-.left-nav-1 {
-  position: absolute;
-  top: 0px;
-  left: -8px;
-  background: var(--bs-primary);
-  color: var(--bs-white);
-  padding: 0.7rem 2rem;
-  border-radius: 30px;
-  transition: 0.5s;
-}
-.right-nav-1 {
-  position: absolute;
-  top: 0px;
-  right: -8px;
-  background: var(--bs-primary);
-  color: var(--bs-white);
-  padding: 0.7rem 2rem;
-  border-radius: 30px;
-  transition: 0.5s;
-}
-.left-nav-1:hover,
-.right-nav-1:hover {
-  background: var(--bs-white);
-  color: var(--bs-primary);
-}
 .attractions .owl-nav .owl-next {
   position: absolute;
   top: -58px;
