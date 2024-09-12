@@ -17,8 +17,9 @@ const AboutMe = () => {
         <div className="about-image about-top-img fadeInLeft animated">
           <img
             src="/images/about_sloka_img.png"
-            width={"100%"}
+            width={"500"}
             alt="About Me"
+            className="m-auto"
             decoding="async"
             loading="lazy"
           />
