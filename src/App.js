@@ -56,26 +56,6 @@ const App = () => {
   }, []);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const backToTop = document.querySelector(".back-to-top");
-      if (window.scrollY > 300) {
-        backToTop.style.display = "flex";
-      } else {
-        backToTop.style.display = "none";
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-
-    document.querySelector(".back-to-top").addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  useEffect(() => {
     const elements = document.querySelectorAll("[data-toggle='counter-up']");
     elements.forEach((element) => {
       new Waypoint({
