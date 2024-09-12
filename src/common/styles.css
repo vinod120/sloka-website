@@ -507,3 +507,7 @@ button.btn.btn-primary.w-100.py-3.send-btn:hover{
   background: var(--bs-dark);
   color: var(--bs-white);
 }
+
+.swiper-wrapper{
+  justify-content: center !important;
+}

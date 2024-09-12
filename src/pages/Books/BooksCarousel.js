@@ -2,13 +2,40 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "./Books.css";
+import { Link } from "react-router-dom";
+
+const books = [
+  {
+    id: 1,
+    title: "Not Just Sadness",
+    img: "https://drslokauk.netlify.app/images/not_just_sadness.jpg",
+    link: "/books/1"
+  },
+  {
+    id: 2,
+    title: "The Unspoken Thoughts",
+    img: "https://drslokauk.netlify.app/images/the_unspoken_thoughts.jpg",
+    link: "/books/2"
+  },
+];
 
 const BooksCarousel = () => {
+  const slidesPerViewSetting = {
+    0: { slidesPerView: 1 },
+    576: { slidesPerView: 2 },
+    768: { slidesPerView: 2 },
+    992: { slidesPerView: 3 },
+    1200: { slidesPerView: 4 }
+  };
+
+  // Get the maximum number of slidesPerView based on breakpoints
+  const maxSlidesPerView = Math.max(...Object.values(slidesPerViewSetting).map(bp => bp.slidesPerView));
+console.log("maxSlidesPerView", maxSlidesPerView, books.length)
   return (
     <div className="container-fluid attractions py-5">
       <div className="container attractions-section py-5">
         <div
-          className="text-center mx-auto pb-5"
+          className="text-center mx-auto pb-5 wow fadeInUp animated"
           data-wow-delay="0.2s"
           style={{ maxWidth: "800px" }}
         >
@@ -17,85 +44,41 @@ const BooksCarousel = () => {
           <p className="text-white mb-0">
             Transform your thoughts and life, nourish your mind and soul.
             <br />
-            Explore Dr. Sloka’s books and start your journey to empower yourself
-!
+            Explore Dr. Sloka’s books and start your journey to empower yourself!
           </p>
         </div>
 
-        {/* Swiper Carousel */}
         <Swiper
           modules={[Navigation, Autoplay]}
-          // autoplay={{ delay: 2000 }}
-          speed={2000}
-          loop={true}
-          navigation={{
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
-          }}
+          autoplay={{ delay: 2000 }}
+          speed={1500}
+          loop={false}
           spaceBetween={25}
-          breakpoints={{
-            0: { slidesPerView: 1 },
-            576: { slidesPerView: 2 },
-            768: { slidesPerView: 2 },
-            992: { slidesPerView: 2 },
-            1200: { slidesPerView: 2 },
-            1400: { slidesPerView: 2 }
-          }}
+          centeredSlides={books.length > maxSlidesPerView ?  true : false}
+          loopfillgroupwithblank={books.length > maxSlidesPerView ?  "false" : "true"}
+          breakpoints={slidesPerViewSetting}
         >
-          {/* Carousel Items */}
-          <SwiperSlide className="textstt">
-            <div className="attractions-item">
-              <img
-                src="https://drslokauk.netlify.app/images/the_unspoken_thoughts.jpg"
-                className="books-img rounded"
-                alt="The Unspoken Thoughts"
-              />
-              <a href="#" className="attractions-name">
-                Book1
-              </a>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="textstt">
-            <div className="attractions-item">
-              <img
-                src="https://drslokauk.netlify.app/images/not_just_sadness.jpg"
-                className="books-img rounded"
-                alt="Not Just Sadness"
-              />
-              <a href="#" className="attractions-name">
-                Book2
-              </a>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="textstt">
-            <div className="attractions-item">
-              <img
-                src="https://placehold.co/1800x1200"
-                className="books-img rounded"
-                alt="The Unspoken Thoughts"
-              />
-              <a href="#" className="attractions-name">
-                Book3
-              </a>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="textstt">
-            <div className="attractions-item">
-              <img
-                src="https://drslokauk.netlify.app/images/not_just_sadness.jpg"
-                className="books-img rounded"
-                alt="Not Just Sadness"
-              />
-              <a href="#" className="attractions-name">
-                Book4
-              </a>
-            </div>
-          </SwiperSlide>
-
-          {/* Additional items as needed */}
+          {books.map((book, index) => (
+            <SwiperSlide
+              key={book.id}
+              className="wow fadeInUp animated"
+              data-wow-delay={`${0.2 + index * 0.2}s`}
+            >
+              <div className="attractions-item">
+                <img
+                  src={book.img}
+                  className="img-fluid rounded w-100"
+                  alt={book.title}
+                  loading="lazy" 
+                  decoding="async" 
+                  fetchpriority="high"
+                />
+                <Link to={`/books/${book.id}`} className="attractions-name">
+                  {book.title}
+                </Link>
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>
