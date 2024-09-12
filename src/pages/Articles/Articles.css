@@ -54,3 +54,10 @@
   border-bottom-right-radius: 10px;
   background: var(--bs-light);
 }
+
+.sloka-sign-text {
+  font-family: 'Mistral', sans-serif;
+  font-size: 60px;
+  text-align: end;
+
+}
