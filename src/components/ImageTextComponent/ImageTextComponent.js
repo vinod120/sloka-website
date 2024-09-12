@@ -1,7 +1,5 @@
 import React from 'react'
 import './ImageTextComponent.css'
-import { Link } from 'react-router-dom'
-import ReactOwlCarousel from 'react-owl-carousel'
 
 function ImageTextComponent(props) {
     const { title = "", image = {}, titleSuffix = "", content = [] } = props
