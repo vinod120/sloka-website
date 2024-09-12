@@ -15,7 +15,7 @@ function Books() {
   useEffect(() => {
     window.scrollTo(0, 0)
 
-  }, [])
+  }, [id])
 
   return (
     <div className='books-page-wrapper'>
@@ -34,22 +34,25 @@ function Books() {
             <div className="row g-4 justify-content-center">
               {books.map((obj, index) => {
                 index = index + 1
-                return <div className="col-lg-4 wow fadeInUp" data-wow-delay="0.2s" key={`books_${index}`}>
-                  <div className="blog-item">
+                return <div className="col-lg-4 wow fadeInUp book-wrapper-div" data-wow-delay="0.2s" key={`books_${index}`}>
+                  <div className="blog-item max-book-div">
                     <div className="blog-img">
                       <Link to={`${index}`}>
+                      <picture>
+                        <source />
                         <img
                           {...obj.image}
                           className="rounded-top"
-                          width={400}
+                          width={"100%"}
                           height={400}
                         />
+                        </picture>
                       </Link>
                     </div>
                     <div className="blog-content p-4">
                       <Link to={`${index}`} className="h4 d-inline-block mb-4">
                         {obj.title}
-                        {obj.titleSuffix ? <span>{obj.titleSuffix}</span> : null}
+                        {obj.titleSuffix ? <span style={{fontSize:"12px",fontStyle:"italic"}}>{obj.titleSuffix}</span> : null}
                       </Link>
                       <p className="mb-4">
                         {obj.content?.[0].slice(0, 100)}.....

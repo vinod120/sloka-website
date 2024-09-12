@@ -116,6 +116,11 @@ figure.open .carousel .slide .figure .cover {
         width: 100%;
     }
 
+    .book-wrapper-div,
+    .max-book-div {
+        max-width: 340px !important;
+    }
+
 }
 
 @media screen and (max-width:575.98px) {

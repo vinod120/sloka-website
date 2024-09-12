@@ -55,6 +55,7 @@
   text-align: center;
 }
 
+
 .about-top-img {
   margin-top: -54px;
 }
@@ -62,6 +63,12 @@
 .about-page-content-wrapper {
   display: flex;
   gap: 50px;
+  overflow: hidden;
+}
+@media screen and (min-width:1256px) {
+  .about-top-img {
+    margin-top: -200px;
+  }
 }
 
 @media screen and (max-width: 991.98px) {
