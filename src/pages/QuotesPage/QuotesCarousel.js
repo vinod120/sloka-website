@@ -1,86 +1,63 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
-import ring from "../../images/dr2.jpg";
-import "./QuotesPage.css";
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Autoplay } from 'swiper/modules'; // Import additional modules
+import './QuotesPage.css'; // Assuming you have this file for your styles
+import headerLogo from "../../images/dr2.jpg"
+
+const quotes = [
+  {
+    image: headerLogo,
+    name: 'Dr. Sloka',
+    quote: "Read as if you're finding the writer's heart <br />Write like you're reading the reader's mind",
+  },
+  {
+    image: headerLogo,
+    name: 'Dr. Sloka',
+    quote: 'Progression in Life needs Initiation <br /> The seed of Initiation is Determination',
+  },
+  {
+    image: headerLogo,
+    name: 'Dr. Sloka',
+    quote: 'He who dwells in the past has non pleasure <br /> He who peeps inot the future has no peace of <br />mind!!',
+  },
+];
 
 const QuotesCarousel = () => {
   return (
     <div className="container-fluid testimonial py-5">
       <div className="container py-5">
-        {/* Section Header */}
-        <div
-          className="text-center mx-auto pb-5 wow fadeInUp"
-          data-wow-delay="0.2s"
-          style={{ maxWidth: "800px" }}
-        >
-          <h4 className="text-primary">Dr. Sloka's </h4>
+        <div className="text-center mx-auto pb-5 fadeInUp animated" style={{ maxWidth: '800px' }}>
+          <h4 className="text-primary">Dr. Sloka's</h4>
           <h1 className="display-5 text-white mb-4">TRENDING QUOTES</h1>
         </div>
-
-        {/* Swiper Carousel */}
         <Swiper
-          className="owl-theme testimonial-carousel wow fadeInUp"
           modules={[Navigation, Autoplay]}
-          autoplay={{ delay: 2500, disableOnInteraction: false }} // Adjust delay for autoplay
-          speed={2000} // Adjust transition speed
+          autoplay={false}
+          speed={1000}
           loop={true}
-          navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
           spaceBetween={25}
           slidesPerView={1}
-          pagination={{ clickable: true }}
+          centeredSlides={true}
+          allowTouchMove={false}
         >
-          {/* Testimonial 1 */}
-          <SwiperSlide>
-            <div className="testimonial-item p-4">
-              <p className="text-white fs-4 mb-4">
-                Read as if you're finding the writer's heart <br />Write like you're
-                reading the reader's mind
-              </p>
-              <div className="testimonial-inner d-flex">
-                <div className="testimonial-img">
-                  <img
-                    src={ring}
-                    className="img-fluid"
-                    alt="Testimonial"
-                  />
-                  <div className="testimonial-quote btn-lg-square rounded-circle">
-                    <i className="fa fa-quote-right fa-2x" />
+          {quotes.map((item, index) => (
+            <SwiperSlide key={index} className="testimonial-carousel">
+              <div className="testimonial-item p-4" style={{ width: '70%', margin: '0 auto' }}> 
+                <p className="text-white fs-4 mb-4" dangerouslySetInnerHTML={{ __html: item?.quote }}></p>
+                <div className="testimonial-inner">
+                  <div className="testimonial-img">
+                    <img src={item?.image} className="img-fluid" alt="testimonial" />
+                    <div className="testimonial-quote btn-lg-square rounded-circle">
+                      <i className="fa fa-quote-right fa-2x"></i>
+                    </div>
+                  </div>
+                  <div className="ms-4">
+                    <h4>{item?.name}</h4>
                   </div>
                 </div>
-                <div className="ms-4">
-                  <h4>Dr. Sloka</h4>
-                </div>
               </div>
-            </div>
-          </SwiperSlide>
-
-          {/* Testimonial 2 */}
-          <SwiperSlide>
-            <div className="testimonial-item p-4">
-              <p className="text-white fs-4 mb-4">
-                Progression in Life needs Initiation <br />
-                The seed of Initiation is Determination
-              </p>
-              <div className="testimonial-inner d-flex">
-                <div className="testimonial-img">
-                  <img
-                    src="img/testimonial-3.jpg"
-                    className="img-fluid"
-                    alt="Testimonial"
-                  />
-                  <div className="testimonial-quote btn-lg-square rounded-circle">
-                    <i className="fa fa-quote-right fa-2x" />
-                  </div>
-                </div>
-                <div className="ms-4">
-                  <h4>Dr. Sloka</h4>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-
-          {/* Additional Testimonials */}
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>

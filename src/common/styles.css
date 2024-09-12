@@ -412,18 +412,6 @@
   background: var(--bs-white);
   transition: 0.5s;
 }
-.test-left-nav-1 {
-  font-size: 50px;
-  margin-left: 80px;
-  color: var(--bs-white);
-  transition: 0.5s;
-}
-.test-right-nav-1 {
-  font-size: 50px;
-  margin-right: 80px;
-  color: var(--bs-white);
-  transition: 0.5s;
-}
 .testimonial-carousel .owl-nav {
   display: none !important;
 }

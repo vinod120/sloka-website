@@ -19,7 +19,7 @@ const ArticlesCarousel = () => {
           modules={[Navigation, Autoplay]}
           slidesPerView={1}
           spaceBetween={30}
-          autoplay={{ delay: 3000 }}
+          autoplay={false}
           navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
           loop={true}
           centeredSlides

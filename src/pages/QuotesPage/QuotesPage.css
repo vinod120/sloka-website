@@ -49,3 +49,13 @@
 .swiper-button-prev {
   display: none;
 }
+.testimonial-item {
+  text-align: center !important;
+  width: 70% !important; /* Set width to 70% */
+  margin: 0 auto !important;
+}
+
+.testimonial-img {
+  position: relative !important;
+  display: inline-block !important;
+}
