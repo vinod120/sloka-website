@@ -41,7 +41,7 @@ const Articles = () => {
                   anything that can make us relive the same moment- It’s a
                   Photograph.....
                 </p>
-                <Link to="1" className="btn btn-primary rounded-pill py-2 px-4">
+                <Link to="1" className="btn btn-primary rounded-pill py-2 px-4 article-read-more">
                   Read More <i className="fas fa-arrow-right ms-2" />
                 </Link>
               </div>
