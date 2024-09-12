@@ -77,6 +77,7 @@ const Articles = () => {
             </p>
             <p>Have you noticed the change in your emotional state before and after doing this photo gazing exercise? Look at your surroundings now, you’re just where you are but already travelled into the past and came back to this moment and so I call a photo as a time machine in your pocket. Get in touch with a therapist for more detailed and intense way of therapeutic process and healing. Happy Times!</p>
           </div>
+          <p className="sloka-sign-text">--Dr.Sloka</p>
         </div>
         }
       </div>
