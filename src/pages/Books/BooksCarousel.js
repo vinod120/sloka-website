@@ -30,7 +30,6 @@ const BooksCarousel = () => {
 
   // Get the maximum number of slidesPerView based on breakpoints
   const maxSlidesPerView = Math.max(...Object.values(slidesPerViewSetting).map(bp => bp.slidesPerView));
-console.log("maxSlidesPerView", maxSlidesPerView, books.length)
   return (
     <div className="container-fluid attractions py-5">
       <div className="container attractions-section py-5">
