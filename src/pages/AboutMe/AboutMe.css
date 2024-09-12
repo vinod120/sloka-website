@@ -55,14 +55,41 @@
   text-align: center;
 }
 
+
 .about-top-img {
   margin-top: -54px;
 }
+
+.about-page-content-wrapper {
+  display: flex;
+  gap: 50px;
+  overflow: hidden;
+}
+@media screen and (min-width:1256px) {
+  .about-top-img {
+    margin-top: -200px;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .about-page-content-wrapper {
+    flex-direction: column;
+  }
+
+  .about-page-content-wrapper2 {
+    flex-direction: column-reverse;
+  }
+}
+
 
 @media screen and (max-width: 426px) {
   .about-image {
     margin-bottom: 20px;
     margin-right: unset;
+  }
+
+  .about-image img {
+    width: 350px;
   }
 
   .about-container {
@@ -74,4 +101,5 @@
     font-size: 20px;
     font-weight: 600;
   }
+
 }

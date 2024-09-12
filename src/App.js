@@ -77,7 +77,8 @@ const App = () => {
             <Layout>
                 <Routes>
                     <Route path="/" element={<HomePage />} />
-                    <Route path="/blogs" element={<Articles />} />
+                    <Route path="/articles" element={<Articles />} />
+                    <Route path="/articles/:id" element={<Articles />} />
                     <Route path="/books/:id" element={<Books />} />
                     <Route path="/books" element={<Books />} />
                     <Route path="/about" element={<AboutMe />} />
