@@ -21,8 +21,7 @@ const Footer = () => {
                 </h4>
               </a>
               <p className="mb-2">
-                Dolor amet sit justo amet elitr clita ipsum elitr est. Lorem
-                ipsum dolor sit amet, consectetur adipiscing...
+              Dr. Sloka, a pen name for Dr. Sukesh Krishna Chaitanya Loka, professionally is a Clinical Pharmacologist and a freelance Clinical Psychologist.
               </p>
 
               <div className="d-flex align-items-center">
