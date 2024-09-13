@@ -1,94 +1,45 @@
-.footer-container {
-  width: 100%;
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-  position: relative;
-  margin-top: auto;
-  display: flex;
-  justify-content: space-between;
-  justify-items: center;
-  padding: 2rem 4rem;
-  padding-bottom: 0;
-}
 .footer {
-  text-align: center;
+  background: var(--bs-dark);
 }
 
-.footer h2 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-  font-family: 'Serif', serif;
-}
-
-.footer p {
-  font-size: 1.2rem;
-  font-style: italic;
-  margin-bottom: 40px;
-}
-
-.footer-links {
+.footer .footer-item {
   display: flex;
-  justify-content: center;
-  gap: 60px;
+  flex-direction: column;
 }
 
-.footer-links ul {
-  list-style-type: none;
-  padding: 0;
+.footer .footer-item a {
+  line-height: 35px;
+  color: var(--bs-body);
+  transition: 0.5s;
 }
 
-.footer-links ul li {
-  margin: 5px 0;
+.footer .footer-item p {
+  line-height: 35px;
 }
 
-.footer-links ul li a {
-  text-decoration: none;
+.footer .footer-item a:hover{
+  color: var(--bs-primary);
 }
 
-.footer-links ul li a:hover {
-  text-decoration: underline;
+.footer .footer-item .footer-btn a,
+.footer .footer-item .footer-btn a i {
+  transition: 0.5s;
 }
 
-.footer-social {
-  margin-bottom: 20px;
-  font-size: 2rem;
+.footer .footer-item .footer-btn a:hover {
+  background: var(--bs-white);
+}
+
+.footer .footer-item .footer-btn a:hover i {
+  color: var(--bs-primary);
+}
+
+.footer .footer-item .opening-date {
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+}
+
+.footer .footer-item .opening-date .opening-clock {
   display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.footer-social a {
-  margin: 0 10px;
-  text-decoration: none;
-}
-
-.footer-social i {
-  color: crimson;
-  text-decoration: none;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-.footer-social i:hover {
-  color: green;
-  transform: scale(1.3);
-}
-.footer-social a:hover {
-  text-decoration: underline;
-}
-
-.footer-copyright {
-  font-size: 0.9rem;
-}
-.footer-content h2{
-    font-family: 'FontAwesome';
-    margin: 0;
-}
-@media screen and (max-width: 768px) {
-}
-
-@media screen and (max-width: 426px) {
-  .footer-container {
-    display: contents;
-  }
-  .footer-content {
-    margin: 2rem;
-  }
+  align-items: center;
+  line-height: 35px;
 }

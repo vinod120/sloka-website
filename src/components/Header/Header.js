@@ -1,59 +1,42 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import './Header.css';
-import navigationData from '../../utils/navigationData';
-
+import React from "react";
+import { NavLink } from "react-router-dom"; // Use NavLink instead of Link
+import "./Header.css";
+import navLinks from "../../utils/navLink";
+import headerLogo from "../../images/dr2.jpg"
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-
-  const toggleMenu = () => {
-    setIsOpen(prevState => !prevState);
-  };
-
-  const closeMenu = () => {
-    setIsOpen(false);
-  };
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window?.innerWidth > 426) {
-        closeMenu();
-      }
-    };
-
-    window?.addEventListener('resize', handleResize);
-
-    return () => {
-      window?.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
   return (
-    <header className="header-container">
-      <Link to="/">
-        {/* <h1 className="header-title">Dr. Sloka</h1> */}
-        <img src='/images/header_logo.png' width={180} height={120} alt='' className='header-img'/>
-      </Link>
-      <nav className={`header-nav ${isOpen ? 'open' : ''}`}>
-        <button className="close-button" onClick={toggleMenu}>
-          &times;
+    <div className="container-fluid nav-bar sticky-top px-4 py-2 py-lg-0 box-shdw">
+      <nav className="navbar navbar-expand-lg navbar-light">
+        <NavLink to="/" className="navbar-brand p-0">
+          <div className="text-dark header-logo-container d-flex align-items-center">
+          <img src={headerLogo} alt="header-logo" /> Dr. Sloka
+          </div>
+        </NavLink>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span className="fa fa-bars" />
         </button>
-        <ul>
-          {navigationData.map(menu => {
-            const cssClass = window.location?.pathname?.includes(menu.path) ? "color-007bff" : ""
-            return <li key={menu.name} >
-              <Link to={menu.path} onClick={toggleMenu} className={cssClass}>
-                <i className={`${menu.icon} nav-icon`} /> {menu.name}
-              </Link>
-            </li>
-          })}
-        </ul>
+        <div className="collapse navbar-collapse" id="navbarCollapse">
+          <div className="navbar-nav ms-auto py-0">
+            {navLinks?.map((link) =>
+              <NavLink
+                key={link?.name}
+                to={link?.path}
+                className="nav-item nav-link nav-mr-4"
+                activeclassname="active"
+                exact="true"
+              >
+               <i className={`${link?.icon}`} />  {link?.name}
+              </NavLink>
+            )}
+          </div>
+        </div>
       </nav>
-      <button className="menu-button" onClick={toggleMenu}>
-        &#9776;
-      </button>
-    </header >
+    </div>
   );
 };
 

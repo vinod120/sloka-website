@@ -1,125 +1,115 @@
-import React, { useState } from "react";
-import "./ContactForm.css";
+import React, { useEffect } from "react";
+import socialLinks from "../../utils/socialLinks";
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
+  useEffect(()=>{
+    window.scrollTo(0,0)
 
-  const [errors, setErrors] = useState({});
-
-  const handleChange = e => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const validate = () => {
-    const newErrors = {};
-
-    if (!formData.firstName) {
-      newErrors.firstName = "First name is required";
-    }
-
-    if (!formData.email) {
-      newErrors.email = "Email is required";
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = "Email address is invalid";
-    }
-
-    if (!formData.message) {
-      newErrors.message = "Message is required";
-    }
-
-    return newErrors;
-  };
-
-  const handleSubmit = e => {
-    e.preventDefault();
-    const formErrors = validate();
-    if (Object.keys(formErrors).length === 0) {
-      console.log("Form submitted successfully", formData);
-    } else {
-      setErrors(formErrors);
-    }
-  };
-
+  },[])
   return (
-    <div className="contact-container">
-      <div className="contact-info">
-        <h2>Contact Me</h2>
-        <p>Need guidance or support? Feel free to reach out!</p>
-        <p>I’ll respond promptly. Thank you for your patience.</p>
-      </div>
-
-      <div className="contact-form">
-        <p>Share what brings you here, and I’ll respond promptly.</p>
-        <form onSubmit={handleSubmit}>
-          <div className="form-group">
-            <input
-              type="text"
-              name="firstName"
-              placeholder="First Name"
-              value={formData.firstName}
-              onChange={handleChange}
-              className={errors.firstName ? "input-error" : ""}
-              required
-            />
-            {errors.firstName &&
-              <span className="error">
-                {errors.firstName}
-              </span>}
-            <input
-              type="text"
-              name="lastName"
-              placeholder="Last Name"
-              value={formData.lastName}
-              onChange={handleChange}
-            />
+    <div className="container-fluid contact py-5">
+      <div className="container py-5">
+        <div className="row g-5">
+          <div className="col-12 col-xl-6 wow fadeInUp" data-wow-delay="0.2s">
+              <div className="pb-5">
+                <h4 className="text-primary">Get in Touch</h4>
+                <p className="mb-0">
+                  Need guidance or support? Feel free to reach out!
+                  <br />
+                  I’ll respond promptly. Thank you for your patience.
+                </p>
+              </div>
+              <div className="row g-4 mt-30">
+                <div className="col-12">
+                  <div className="d-flex justify-content-around bg-light rounded p-4">
+                  {socialLinks?.map(item =>
+                    <a
+                      key={item.path}
+                      href={item.path}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="btn btn-xl-square btn-primary rounded-circle"
+                    >
+                      <i className={`${item.icon} display-7`} />
+                    </a>
+                  )}
+                   
+                  </div>
+                </div>
+              </div>
           </div>
-          <div className="form-group">
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              value={formData.email}
-              onChange={handleChange}
-              className={errors.email ? "input-error" : ""}
-              required
-            />
-            {errors.email &&
-              <span className="error">
-                {errors.email}
-              </span>}
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Phone Number"
-              value={formData.phone}
-              onChange={handleChange}
-            />
+          <div className="col-xl-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div className="bg-light p-5 rounded h-100">
+              <h5 className="text-primary mb-4">Share what brings you here, and I’ll respond promptly.</h5>
+              <form>
+                <div className="row g-4">
+                  <div className="col-lg-12 col-xl-6">
+                    <div className="form-floating">
+                      <input
+                        type="text"
+                        className="form-control border-0"
+                        id="name"
+                        placeholder="Your Name"
+                      />
+                      <label htmlFor="name">Your Name</label>
+                    </div>
+                  </div>
+                  <div className="col-lg-12 col-xl-6">
+                    <div className="form-floating">
+                      <input
+                        type="text"
+                        className="form-control border-0"
+                        id="name"
+                        placeholder="Last Name"
+                      />
+                      <label htmlFor="name">Last Name</label>
+                    </div>
+                  </div>
+                  <div className="col-lg-12 col-xl-6">
+                    <div className="form-floating">
+                      <input
+                        type="email"
+                        className="form-control border-0"
+                        id="email"
+                        placeholder="Your Email"
+                      />
+                      <label htmlFor="email">Your Email</label>
+                    </div>
+                  </div>
+                  <div className="col-lg-12 col-xl-6">
+                    <div className="form-floating">
+                      <input
+                        type="phone"
+                        className="form-control border-0"
+                        id="phone"
+                        placeholder="Phone"
+                      />
+                      <label htmlFor="phone">Your Phone</label>
+                    </div>
+                  </div>
+                 
+               
+                  <div className="col-12">
+                    <div className="form-floating">
+                      <textarea
+                        className="form-control border-0"
+                        placeholder="Leave a message here"
+                        id="message"
+                        style={{ height: "160px" }}
+                      />
+                      <label htmlFor="message">Message</label>
+                    </div>
+                  </div>
+                  <div className="col-12">
+                    <button className="btn btn-primary w-100 py-3 send-btn">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
-          <div className="form-group">
-            <textarea
-              name="message"
-              placeholder="Your Message"
-              value={formData.message}
-              onChange={handleChange}
-              rows="5"
-              className={errors.message ? "input-error" : ""}
-              required
-            />
-            {errors.message &&
-              <span className="error">
-                {errors.message}
-              </span>}
-          </div>
-          <button type="submit" className="submit-btn">
-            Submit
-          </button>
-        </form>
+        </div>
       </div>
     </div>
   );

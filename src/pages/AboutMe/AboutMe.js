@@ -1,24 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./AboutMe.css";
 
 const AboutMe = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+
+  }, [])
   return (
-    <div className="about-container">
+    <div className="container-fluid p-5">
       <div className="about-title">
-        He is a Med and Mind Mentor! By Passion,<br /> he is a poet, artist, writer
-        and now, an author too!
+        <p className="fadeInLeft animated mb-0">He is a Med and Mind Mentor! By Passion,</p>
+        <p className="fadeInRight animated mb-0"> he is a poet, artist, writer
+          and now, an author too!</p>
       </div>
-      <div className="d-flex gap-50">
-        <div className="about-image about-top-img">
+      <div className="about-page-content-wrapper">
+        <div className="about-image about-top-img fadeInLeft animated">
           <img
             src="/images/about_sloka_img.png"
-            width={600}
+            width={"500"}
             alt="About Me"
+            className="m-auto"
             decoding="async"
             loading="lazy"
           />
         </div>
-        <div className="about-text">
+        <div className="about-text fadeInRight animated">
           <div className="about-text-content">
             <p>
               Dr. Sloka, a pen name for Dr. Sukesh Krishna Chaitanya Loka,
@@ -47,8 +53,8 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-      <div className="d-flex gap-50">
-        <div className="about-text">
+      <div className="about-page-content-wrapper about-page-content-wrapper2">
+        <div className="about-text fadeInLeft animated">
           <div className="about-text-content">
             <p>
               He underwent a course of Mindfulness Based Cognitive Therapy (MBCT)
@@ -75,10 +81,10 @@ const AboutMe = () => {
             </p>
           </div>
         </div>
-        <div className="about-image">
+        <div className="about-image fadeInRight animated">
           <img
             src="/images/Author-Image-1.png"
-            width={600} 
+            width={"100%"}
             alt="About Me"
             decoding="async"
             loading="lazy"

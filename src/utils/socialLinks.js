@@ -1,4 +1,4 @@
-const footerIcons = [
+const socialLinks = [
   {
     path: "https://instagram.com",
     icon: "fab fa-instagram"
@@ -21,4 +21,4 @@ const footerIcons = [
   }
 ];
 
-export default footerIcons;
+export default socialLinks;

@@ -1,49 +1,52 @@
-import React from 'react';
-import './QuotesPage.css';
-import quotes1 from "../../images/quote.png";
-import quotes2 from "../../images/quote2.png";
-import quotes3 from "../../images/quote3.png";
+import React from "react";
+import "./QuotesPage.css";
+import QuoteItem from "./QuoteItem";
 
-
-const quotesData = [
+const quotes = [
   {
-    imageUrl: quotes1,
-    downloadLink: quotes1,
+    id: 1,
+    image: "https://drslokauk.netlify.app/static/media/quote.cd67fc6fffa5a746761a.png",
+    lightboxId: "Gallery-1",
+    colSize: 6,
   },
   {
-    imageUrl: quotes2,
-    downloadLink: quotes2,
+    id: 2,
+    image: "https://drslokauk.netlify.app/static/media/quote2.c46e96b5be6984a84be2.png",
+    lightboxId: "Gallery-2",
+    colSize: 3,
   },
   {
-    imageUrl: quotes3,
-    downloadLink: quotes3,
-  }, {
-    imageUrl: quotes1,
-    downloadLink: quotes1,
-  }, {
-    imageUrl: quotes2,
-    downloadLink: quotes1,
-  }, {
-    imageUrl: quotes3,
-    downloadLink: quotes3
+    id: 3,
+    image: "https://drslokauk.netlify.app/static/media/quote3.afe282d919b038e04950.png",
+    lightboxId: "Gallery-3",
+    colSize: 3,
   },
 ];
 
 const QuotesPage = () => {
   return (
-    <div className="quotes-main-container">
-      {quotesData.map((quote, index) => (
-        <div className="quote-card" key={index}>
-          <img src={quote.imageUrl} alt={`Quote ${index + 1}`} loading='lazy' decoding='async' />
-          <a
-            href={quote.downloadLink}
-            download
-            className="download-button"
-          >
-            Download Here
-          </a>
+    <div className="container-fluid gallery py-5">
+      <div className="container pb-5">
+        <div
+          className="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style={{ maxWidth: "800px" }}
+        >
+          <h4 className="text-primary">Dr. Sloka's</h4>
+          <h1 className="display-5 mb-4">TRENDING QUOTES</h1>
         </div>
-      ))}
+        <div className="row g-4">
+          {quotes.map((quote, index) => (
+            <QuoteItem
+              key={quote.id}
+              image={quote.image}
+              lightboxId={quote.lightboxId}
+              delay={0.2 + index * 0.2}
+              colSize={quote.colSize}
+            />
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

@@ -47,6 +47,33 @@
   width: 50%;
 }
 
+.blockquote-footer {
+  margin-left: 38%;
+  color: #1c0950;
+}
+
+/* CSS */
+.images-wrapper {
+  max-height: 380px;
+  overflow: hidden;
+  /* This will hide any overflow content */
+}
+
+.images-wrapper img {
+  object-fit: cover;
+  /* Ensures images fit within the max-height without distortion */
+  height: 100%;
+  /* Makes the image take the full height of the container */
+  width: auto;
+  /* Keeps the aspect ratio of the image */
+}
+
+@media (min-width:575.98px) and (max-width:991.98px) {
+  .text-container-wrapper {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width:579.98px) {
   .text-container-wrapper {
     width: 100%;

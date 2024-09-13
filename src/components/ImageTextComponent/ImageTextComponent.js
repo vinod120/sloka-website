@@ -1,20 +1,25 @@
 import React from 'react'
 import './ImageTextComponent.css'
-import { Link } from 'react-router-dom'
 
 function ImageTextComponent(props) {
-    const { title = "", image = {},titleSuffix="", content = [] } = props
+    const { title = "", image = {}, titleSuffix = "", content = [] } = props
 
     return (<div className='left-side-rigth-text-container'>
-        {title && <p className='title'>{title}{titleSuffix &&<span className='title-suffix'>{titleSuffix}</span>}</p>}
+        {title &&
+            <blockquote className="blockquote text-right title">
+                <p className="mb-0 title p-0">{title}</p>
+                {titleSuffix && <footer className="blockquote-footer"><cite title="Source Title title">{titleSuffix}</cite></footer>}
+            </blockquote>
+        }
         <div className='left-side-rigth-text-wrapper'>
-            {image && <div className='book-highlight-wrapper'>
-                <Link ></Link>
-                <figure className='figure'  >
-                    <img {...image} width={300} alt="books" height={380} className="cover" />
-                </figure>
-            </div>}
-            {content.length ? <div className='text-container-wrapper'>
+            {image &&
+                <div className='book-highlight-wrapper1 fadeInLeft animated'>
+                    <figure className='figure' >
+                        <img {...image} width={300} alt="books" height={380} className="cover" />
+                    </figure>
+                </div>
+            }
+            {content.length ? <div className='text-container-wrapper fadeInRight animated'>
                 {content.map(item =>
                     <div dangerouslySetInnerHTML={{ __html: item }} className='right-side-content-para' />
                 )}
