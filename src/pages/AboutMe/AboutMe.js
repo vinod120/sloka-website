@@ -7,7 +7,7 @@ const AboutMe = () => {
 
   }, [])
   return (
-    <div className="about-container">
+    <div className="container-fluid p-5">
       <div className="about-title">
         <p className="fadeInLeft animated mb-0">He is a Med and Mind Mentor! By Passion,</p>
         <p className="fadeInRight animated mb-0"> he is a poet, artist, writer

@@ -1,7 +1,7 @@
 .service {
   position: relative;
   overflow: hidden;
-  background-image: url("");
+  /* background-image: url(""); */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -72,7 +72,7 @@
   transition: 0.5s;
 }
 
-.service .service-item:hover .service-content p {
+.service .service-item:hover .service-content p, a.btn.btn-primary.rounded-pill.py-2.px-4.article-read-more:hover {
   color: var(--bs-white);
 }
 

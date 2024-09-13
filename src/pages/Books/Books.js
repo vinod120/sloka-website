@@ -45,6 +45,7 @@ function Books() {
                           className="rounded-top"
                           width={"100%"}
                           height={400}
+                          alt="bookgs-logo"
                         />
                         </picture>
                       </Link>

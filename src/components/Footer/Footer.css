@@ -17,7 +17,7 @@
   line-height: 35px;
 }
 
-.footer .footer-item a:hover {
+.footer .footer-item a:hover{
   color: var(--bs-primary);
 }
 
