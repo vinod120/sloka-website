@@ -1,23 +1,27 @@
 import React from "react";
 import "./QuotesPage.css";
 import QuoteItem from "./QuoteItem";
+import quote1 from "../../images/quote.png"
+import quote2 from "../../images/quote2.png"
+import quote3 from "../../images/quote3.png"
+
 
 const quotes = [
   {
     id: 1,
-    image: "https://drslokauk.netlify.app/static/media/quote.cd67fc6fffa5a746761a.png",
+    image: quote1,
     lightboxId: "Gallery-1",
     colSize: 6,
   },
   {
     id: 2,
-    image: "https://drslokauk.netlify.app/static/media/quote2.c46e96b5be6984a84be2.png",
+    image: quote2,
     lightboxId: "Gallery-2",
     colSize: 3,
   },
   {
     id: 3,
-    image: "https://drslokauk.netlify.app/static/media/quote3.afe282d919b038e04950.png",
+    image: quote3,
     lightboxId: "Gallery-3",
     colSize: 3,
   },
