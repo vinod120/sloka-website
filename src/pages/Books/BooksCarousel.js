@@ -22,9 +22,9 @@ const books = [
 const BooksCarousel = () => {
   const slidesPerViewSetting = {
     0: { slidesPerView: 1 },
-    576: { slidesPerView: 2 },
-    768: { slidesPerView: 2 },
-    992: { slidesPerView: 3 },
+    576: { slidesPerView: 1 },
+    768: { slidesPerView: 1 },
+    992: { slidesPerView: 1 },
     1200: { slidesPerView: 4 }
   };
 
@@ -49,7 +49,7 @@ const BooksCarousel = () => {
 
         <Swiper
           modules={[Navigation, Autoplay]}
-          autoplay={{ delay: 2000 }}
+          autoplay={false}
           speed={1500}
           loop={false}
           spaceBetween={25}
