@@ -1,7 +1,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay } from 'swiper/modules'; // Import additional modules
-import './QuotesPage.css'; // Assuming you have this file for your styles
+import { Navigation, Autoplay } from 'swiper/modules';
+import './QuotesPage.css';
 import headerLogo from "../../images/dr2.jpg"
 
 const quotes = [
