@@ -26,7 +26,7 @@ const QuotesCarousel = () => {
   return (
     <div className="container-fluid testimonial py-5">
       <div className="container py-5">
-        <div className="text-center mx-auto pb-5 fadeInUp animated" style={{ maxWidth: '800px' }}>
+        <div className="text-center mx-auto pb-5 wow fadeInUp animated" style={{ maxWidth: '800px' }}>
           <h4 className="text-primary">Dr. Sloka's</h4>
           <h1 className="display-5 text-white mb-4">TRENDING QUOTES</h1>
         </div>
@@ -39,9 +39,11 @@ const QuotesCarousel = () => {
           slidesPerView={1}
           centeredSlides={true}
           allowTouchMove={false}
+          
         >
           {quotes.map((item, index) => (
-            <SwiperSlide key={index} className="testimonial-carousel">
+            <SwiperSlide key={index} className="testimonial-carousel wow fadeInUp animated"
+            data-wow-delay={`${0.2 + index * 0.2}s`}>
               <div className="testimonial-item p-4" style={{ width: '70%', margin: '0 auto' }}> 
                 <p className="text-white fs-4 mb-4" dangerouslySetInnerHTML={{ __html: item?.quote }}></p>
                 <div className="testimonial-inner">

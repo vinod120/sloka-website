@@ -17,13 +17,13 @@ const ArticlesCarousel = () => {
         </div>
         <Swiper
           modules={[Navigation, Autoplay]}
-          slidesPerView={1}
+          slidesPerView={1}             
           spaceBetween={30}
-          autoplay={false}
-          navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
-          loop={true}
-          centeredSlides
-          className="row g-4 justify-content-center"
+          autoplay={false}            
+         
+          loop={true}                
+          centeredSlides={true}         
+          allowTouchMove={false}        
         >
           <SwiperSlide>
             <div className="col-lg-4">
@@ -93,7 +93,6 @@ const ArticlesCarousel = () => {
               </div>
             </div>
           </SwiperSlide>
-
         </Swiper>
       </div>
     </div>
