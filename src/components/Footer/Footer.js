@@ -15,18 +15,16 @@ const Footer = () => {
         <div className="row g-5 align-items-start justify-content-between">
           <div className="col-md-6 col-lg-6 col-xl-4 order-1 order-md-1 order-lg-1">
             <div className="footer-item">
-              <a href="index.html" className="p-0">
                 <h4 className="text-white mb-4">
-                  <i className="fas fa-swimmer text-primary me-3" />Dr. Sloka
+                  Dr. Sloka
                 </h4>
-              </a>
               <p className="mb-2">
               Dr. Sloka, a pen name for Dr. Sukesh Krishna Chaitanya Loka, professionally is a Clinical Pharmacologist and a freelance Clinical Psychologist.
               </p>
-
+              <div className="sloka-sign-text">--Dr.Sloka</div>
               <div className="d-flex align-items-center">
                 <i className="fas fa-envelope text-primary me-3" />
-                <p className="text-white mb-0">info@example.com</p>
+                <d className="text-white mb-0">info@example.com</d>
               </div>
             </div>
           </div>
