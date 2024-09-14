@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./QuotesPage.css";
 import QuoteItem from "./QuoteItem";
 import quote1 from "../../images/quote.png"
@@ -28,6 +28,11 @@ const quotes = [
 ];
 
 const QuotesPage = () => {
+  useEffect(() => {
+    window && window.scrollTo(0, 0)
+
+  }, [])
+  
   return (
     <div className="container-fluid gallery py-5">
       <div className="container pb-5">
