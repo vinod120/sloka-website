@@ -3,9 +3,7 @@ import React, { useEffect } from "react";
 import HomePage from "./pages/Home/HomePage";
 import Layout from "./components/Layout/Layout";
 import "./common/styles.css";
-import WOW from "wowjs"; // Import WOW.js
-import { Waypoint } from "react-waypoint";
-import $ from "jquery";
+import WOW from "wowjs";
 import Books from "./pages/Books/Books";
 import ContactForm from "./pages/ContactForm/ContactForm";
 import QuotesPage from "./pages/QuotesPage/QuotesPage";
@@ -14,7 +12,6 @@ import Articles from "./pages/Articles/Articles";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
-import "swiper/css/effect-fade";
 
 const App = () => {
   useEffect(() => {
@@ -53,22 +50,6 @@ const App = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
-
-  useEffect(() => {
-    const elements = document.querySelectorAll("[data-toggle='counter-up']");
-    elements.forEach((element) => {
-      new Waypoint({
-        element,
-        handler: () => {
-          $(element).counterUp({
-            delay: 5,
-            time: 2000,
-          });
-        },
-        offset: "bottom-in-view",
-      });
-    });
   }, []);
 
   return (

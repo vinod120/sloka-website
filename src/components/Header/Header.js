@@ -5,12 +5,10 @@ import navLinks from "../../utils/navLink";
 import headerLogo from "../../images/dr2.jpg";
 
 const Header = () => {
-  const navbarCollapseRef = useRef(null); // Create a ref for the navbar collapse element
+  const navbarCollapseRef = useRef(null);
 
-  // Function to close the navbar collapse
   const handleNavLinkClick = () => {
     if (navbarCollapseRef.current && window.innerWidth < 992) { 
-      // Only close on mobile view
       const collapseEl = new window.bootstrap.Collapse(navbarCollapseRef.current);
       collapseEl.hide();
     }

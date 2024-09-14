@@ -24,7 +24,7 @@ const Footer = () => {
               <div className="sloka-sign-text">--Dr.Sloka</div>
               <div className="d-flex align-items-center">
                 <i className="fas fa-envelope text-primary me-3" />
-                <d className="text-white mb-0">info@example.com</d>
+                <div className="text-white mb-0">info@example.com</div>
               </div>
             </div>
           </div>
