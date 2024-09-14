@@ -51,7 +51,7 @@ const BooksCarousel = () => {
           modules={[Navigation, Autoplay]}
           autoplay={false}
           speed={1500}
-          loop={false}
+          loop={true}
           spaceBetween={25}
           centeredSlides={books.length > maxSlidesPerView ?  true : false}
           loopfillgroupwithblank={books.length > maxSlidesPerView ?  "false" : "true"}
