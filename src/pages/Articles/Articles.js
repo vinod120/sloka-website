@@ -1,7 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link, useParams } from "react-router-dom";
 
 const Articles = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+
+  }, [])
+
   const { id } = useParams()
   return (
     <div className="container-fluid blog pb-5">
