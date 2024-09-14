@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay, EffectFade } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import "./WelcomeBanner.css";
 import { Link } from "react-router-dom";
 
@@ -33,12 +33,17 @@ const WelcomeBanner = () => {
   
   return (
     <Swiper
-      className="header-carousel"
-      modules={[Navigation, Autoplay, EffectFade]}
-      slidesPerView={1}
-      autoplay={{ delay: 5000 }}
-      loop={true}
-      effect="fade"
+    spaceBetween={10}
+    slidesPerView={1}
+    autoplay={false}
+    modules={[Autoplay, Navigation]}
+    loop={true}
+    speed={500}
+    navigation={{
+      prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-button-next",
+    }}
+    className="header-carousel"
     >
       {welcomeBannerSlides.map((slide, index) => (
         <SwiperSlide key={index}>
