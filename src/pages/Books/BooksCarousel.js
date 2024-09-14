@@ -56,6 +56,7 @@ const BooksCarousel = () => {
           centeredSlides={books.length > maxSlidesPerView ?  true : false}
           loopfillgroupwithblank={books.length > maxSlidesPerView ?  "false" : "true"}
           breakpoints={slidesPerViewSetting}
+          className="books-carousel-container"
         >
           {books.map((book, index) => (
             <SwiperSlide
