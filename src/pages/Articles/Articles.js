@@ -25,7 +25,7 @@ const Articles = () => {
           }
         </div>
         {!id ? <div className="row g-4 justify-content-center">
-          {[1, 2, 3].map((artObj, index) => <div className="col-lg-4 wow fadeInUp" data-wow-delay="0.2s" key={`articles_${index}`}>
+          {[1].map((artObj, index) => <div className="col-lg-4 wow fadeInUp" data-wow-delay="0.2s" key={`articles_${index}`}>
             <div className="blog-item">
               <div className="blog-img">
                 <img
