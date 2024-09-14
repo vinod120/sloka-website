@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
 import './QuotesPage.css';
 import headerLogo from "../../images/dr2.jpg"
+import { useNavigate } from 'react-router-dom';
 
 const quotes = [
   {
@@ -23,6 +24,13 @@ const quotes = [
 ];
 
 const QuotesCarousel = () => {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/quotes'); 
+  };
+
   return (
     <div className="container-fluid testimonial py-5">
       <div className="container py-5">
@@ -42,8 +50,8 @@ const QuotesCarousel = () => {
           
         >
           {quotes.map((item, index) => (
-            <SwiperSlide key={index} className="testimonial-carousel wow fadeInUp animated"
-            data-wow-delay={`${0.2 + index * 0.2}s`}>
+            <SwiperSlide key={index} className="testimonial-carousel wow fadeInUp animated cursor-pointer"
+            data-wow-delay={`${0.2 + index * 0.2}s`} onClick={handleClick}>
               <div className="testimonial-item p-4" style={{ width: '70%', margin: '0 auto' }}> 
                 <p className="text-white fs-4 mb-4" dangerouslySetInnerHTML={{ __html: item?.quote }}></p>
                 <div className="testimonial-inner">
