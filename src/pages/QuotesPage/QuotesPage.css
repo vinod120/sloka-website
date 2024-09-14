@@ -49,13 +49,84 @@
 .swiper-button-prev {
   display: none;
 }
-.testimonial-item {
-  text-align: center !important;
-  width: 70% !important; /* Set width to 70% */
-  margin: 0 auto !important;
-}
 
 .testimonial-img {
   position: relative !important;
   display: inline-block !important;
+}
+.testimonial-text-content {
+  font-size: 1.5rem;
+  font-style: italic;
+  width: 70%;
+}
+@media (max-width: 768px) {
+  .testimonial-text-content {
+    font-size: 1.2rem;
+    
+  }
+}
+@media (max-width: 426px) {
+  .testimonial-text-content {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+}
+.quotes-container {
+  padding: 60px 80px 40px;
+  position: relative;
+}
+
+.quotes-container:before {
+  position: absolute;
+  font-family: 'FontAwesome';
+  top: 0;
+
+  content: "\f10d";
+  font-size: 200px;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.quotes-container::after {
+  content: "";
+  top: 20px;
+  left: 50%;
+  margin-left: -100px;
+  position: absolute;
+  height: 3px;
+  width: 200px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+.quotes-context {
+  font-family: Open Sans;
+  font-style: italic;
+  color: #555555;
+  padding: 1.2em 30px 1.2em 75px;
+  border-left: 8px solid #78c0a8;
+  border-radius: 10px;
+  line-height: 1.6;
+  position: relative;
+  background: #ededed;
+  margin: 0 auto !important;
+}
+
+.quotes-context::before {
+  font-family: Arial;
+  content: "\201C";
+  color: #78c0a8;
+  font-size: 4em;
+  position: absolute;
+  left: 10px;
+  top: -10px;
+}
+
+.quotes-context::after {
+  content: '';
+}
+
+.quotes-context span {
+  display: block;
+  color: #333333;
+  font-style: normal;
+  font-weight: bold;
 }
