@@ -57,7 +57,7 @@
 .testimonial-text-content {
   font-size: 1.5rem;
   font-style: italic;
-  width: 70%;
+  width: 60%;
 }
 @media (max-width: 768px) {
   .testimonial-text-content {

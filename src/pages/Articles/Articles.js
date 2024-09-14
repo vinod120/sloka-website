@@ -13,8 +13,8 @@ const Articles = () => {
         >
           {!id ? <><h4 className="text-primary">Dr.Sloka's</h4>
             <h1 className="display-5 mb-4"> Articles</h1></> : <>
-            <h1 class="mb-20">Photo Gazing Therapy: A Simple Exercise to Revisit, Relive Your Cherished Memories</h1>
-            <p class="title">A Photo as a Time Machine; The Therapeutic Power a Photograph</p>
+            <h1 className="mb-20">Photo Gazing Therapy: A Simple Exercise to Revisit, Relive Your Cherished Memories</h1>
+            <p className="title">A Photo as a Time Machine; The Therapeutic Power a Photograph</p>
           </>
           }
         </div>
