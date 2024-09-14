@@ -34,9 +34,7 @@ const Articles = () => {
                   alt="blog"
                   style={{ height: "300px" }}
                 />
-                <div className="blog-date">
-                  <i className="fas fa-clock me-2" />August 19, 2025
-                </div>
+                
               </div>
               <div className="blog-content p-4">
                 <Link to="1" className="h4 d-inline-block mb-4">
