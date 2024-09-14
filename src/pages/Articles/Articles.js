@@ -1,7 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link, useParams } from "react-router-dom";
 
 const Articles = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+
+  }, [])
+
   const { id } = useParams()
   return (
     <div className="container-fluid blog pb-5">
@@ -19,7 +25,7 @@ const Articles = () => {
           }
         </div>
         {!id ? <div className="row g-4 justify-content-center">
-          {[1, 2, 3].map((artObj, index) => <div className="col-lg-4 wow fadeInUp" data-wow-delay="0.2s" key={`articles_${index}`}>
+          {[1].map((artObj, index) => <div className="col-lg-4 wow fadeInUp" data-wow-delay="0.2s" key={`articles_${index}`}>
             <div className="blog-item">
               <div className="blog-img">
                 <img
@@ -28,9 +34,7 @@ const Articles = () => {
                   alt="blog"
                   style={{ height: "300px" }}
                 />
-                <div className="blog-date">
-                  <i className="fas fa-clock me-2" />August 19, 2025
-                </div>
+                
               </div>
               <div className="blog-content p-4">
                 <Link to="1" className="h4 d-inline-block mb-4">

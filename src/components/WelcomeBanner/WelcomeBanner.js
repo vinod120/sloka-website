@@ -16,7 +16,9 @@ const WelcomeBanner = () => {
       "buttonText": "Read more",
       "profileImage": "https://drslokauk.netlify.app/images/Author-Image-1.png",
       "profileAltText": "welcome-banner-profile",
-      "profileImageOpacity": "0.5"
+      "profileImageOpacity": "0.5",
+      "animationStyleImage": "fadeInRight animated",
+      "animationStyleText": "fadeInLeft animated",
     },
     {
       "image": "https://drslokauk.netlify.app/images/Author-Image-1.png",
@@ -27,7 +29,9 @@ const WelcomeBanner = () => {
       "buttonText": "Read more",
       "profileImage": "https://drslokauk.netlify.app/images/header_logo.png",
       "profileAltText": "welcome-banner-profile",
-      "profileImageOpacity": "0.5"
+      "profileImageOpacity": "0.5",
+      "animationStyleImage": "fadeInLeft animated",
+      "animationStyleText": "fadeInRight animated",
     }
   ];
   
@@ -60,7 +64,7 @@ const WelcomeBanner = () => {
               <div className="container py-4">
                 <div className="row g-5 align-items-center">
                   <div
-                    className={`col-xl-7 fadeInLeft animated`}
+                    className={`col-xl-7 ${slide?.animationStyle}`}
                     style={{ animationDelay: "1s" }}
                   >
                     <div className="text-start">
@@ -81,7 +85,7 @@ const WelcomeBanner = () => {
                     </div>
                   </div>
                   <div
-                    className={`col-xl-5 fadeInRight animated`}
+                    className={`col-xl-5 ${slide?.animationStyle}`}
                     style={{ animationDelay: "1s" }}
                   >
                     <div className="p-5">
