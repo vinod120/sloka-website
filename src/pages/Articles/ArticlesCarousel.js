@@ -1,6 +1,7 @@
 import React from "react";
-import "./Articles"; // Assuming you're using an external CSS file for styling
 import { Link } from "react-router-dom";
+import DATA from "../../utils/app.json";
+import "./Articles";
 
 const ArticlesCarousel = () => {
   return (
@@ -14,12 +15,16 @@ const ArticlesCarousel = () => {
           <h1 className="display-5 mb-4">Latest Blog & Articles</h1>
         </div>
         <div className="row g-4 justify-content-center wow fadeInUp animated">
-          <BlogItem
-            imgSrc="/images/articles_img1.png"
-            title="Photo Gazing Therapy"
-            description="We all know that we live every moment only once but if there’s anything that can make us relive the same moment- It’s a Photograph. The power of a single photograph is so incredible that it takes us quickly back to the same moment....."
-            readMoreLink="#"
-          />
+          {DATA?.homepage?.articles?.length > 0 &&
+            DATA?.homepage?.articles?.map((article, index) => (
+              <BlogItem
+                key={article?.id}
+                imgSrc={article?.img}
+                title={article?.title}
+                description={article?.description}
+                readMoreLink={article?.id}
+              />
+            ))}
         </div>
       </div>
     </div>
@@ -41,12 +46,8 @@ const BlogItem = ({ imgSrc, title, description }) => {
           />
         </div>
         <div className="blog-content p-4">
-          <span className="h4 d-inline-block mb-4">
-            {title}
-          </span>
-          <p className="mb-4">
-            {description}
-          </p>
+          <span className="h4 d-inline-block mb-4">{title}</span>
+          <p className="mb-4">{description}</p>
           <Link
             to="/articles"
             className="btn btn-primary rounded-pill py-2 px-4 article-read-more"

@@ -2,17 +2,78 @@
   "homepage": {
     "welcomeBannerSlides": [
       {
+        "id": 1,
         "backgroundImage": "https://drslokauk.netlify.app/images/header_logo.png",
         "title": "Hello, I’m Dr Sloka. I’m here to help you",
         "description": "Dr. Sloka, (a pen name for Dr. Sukesh Krishna Chaitanya Loka), professionally is a Clinical Pharmacologist, a freelance Clinical Psychologist and a Medical Trainer. In short, he is a Med and Mind Mentor! By Passion, he is a poet, an artist, a writer and an author too! If your struggle is in the mind, remember that your recovery is also within your mind. Dr. Sloka guides you through the recovery process!",
         "profileImage": "https://drslokauk.netlify.app/images/Author-Image-1.png"
       },
       {
+        "id": 2,
         "backgroundImage": "https://drslokauk.netlify.app/images/Author-Image-1.png",
         "title": "Hello, I’m Dr Sloka. I’m here to help you.",
         "description": "Dr. Sloka, (a pen name for Dr. Sukesh Krishna Chaitanya Loka), professionally is a Clinical Pharmacologist, a freelance Clinical Psychologist and a Medical Trainer. In short, he is a Med and Mind Mentor! By Passion, he is a poet, an artist, a writer and an author too! If your struggle is in the mind, remember that your recovery is also within your mind. Dr. Sloka guides you through the recovery process!",
         "profileImage": "https://drslokauk.netlify.app/images/header_logo.png"
       }
+    ],
+    "ourServices": {
+      "therapies": [
+        { "id": 1, "name": "Mindfulness Based Cognitive Therapy" },
+        { "id": 2, "name": "Arts Therapy" },
+        { "id": 3, "name": "Compassion Focused Therapy" },
+        { "id": 4, "name": "Neuro-linguistic Programming (NLP)" },
+        { "id": 5, "name": "Progressive Muscle Relaxation Therapy" },
+        { "id": 6, "name": "Counseling" },
+        { "id": 7, "name": "Journaling" },
+        { "id": 8, "name": "Cognitive Behavioural Therapy" }
+      ],
+      "specialisms": [
+        { "id": 1, "name": "Anxiety" },
+        { "id": 2, "name": "Stress Management" },
+        { "id": 3, "name": "Obsessive Compulsive Disorder" },
+        { "id": 4, "name": "Suicide Prevention" },
+        { "id": 5, "name": "Psychosexual issues" },
+        { "id": 6, "name": "Self-esteem" },
+        { "id": 7, "name": "Panic Attacks" },
+        { "id": 8, "name": "Depression" }
+      ]
+    },
+    "booksInfo": {
+      "books": [
+        {
+          "id": 1,
+          "title": "Not Just Sadness",
+          "img": "https://drslokauk.netlify.app/images/not_just_sadness.jpg"
+        },
+        {
+          "id": 2,
+          "title": "The Unspoken Thoughts",
+          "img": "https://drslokauk.netlify.app/images/the_unspoken_thoughts.jpg"
+        }
+      ],
+      "booksHeading": "Transform your thoughts and life, nourish your mind and soul.<br />Explore Dr. Sloka’s books and start your journey to empower yourself!"
+    },
+    "quotes": [
+      {
+        "id": 1,
+        "quote": "Read as if you're finding the writer's heart <br />Write like you're reading the reader's mind"
+      },
+      {
+        "id": 2,
+        "quote": "Progression in Life needs Initiation <br /> The seed of Initiation is Determination"
+      },
+      {
+        "id": 3,
+        "quote": "He who dwells in the past has non pleasure <br /> He who peeps inot the future has no peace of <br />mind!!"
+      }
+    ],
+    "articles": [
+        {
+            "id": 1,
+            "title": "Photo Gazing Therapy",
+            "img": "/images/articles_img1.png",
+            "description": "We all know that we live every moment only once but if there’s anything that can make us relive the same moment- It’s a Photograph. The power of a single photograph is so incredible that it takes us quickly back to the same moment....."
+        }
     ]
   }
 }

@@ -6,12 +6,11 @@ import DATA from "../../utils/app.json";
 import "./WelcomeBanner.css";
 
 const WelcomeBanner = () => {
-
   return (
     <Swiper
       spaceBetween={10}
       slidesPerView={1}
-      autoplay={false}
+      autoplay={{ delay: 8000, disableOnInteraction: false }}
       modules={[Autoplay, Navigation]}
       loop={true}
       speed={2000}
@@ -21,8 +20,8 @@ const WelcomeBanner = () => {
       }}
       className="header-carousel"
     >
-      {DATA?.homepage?.welcomeBannerSlides.map((slide, index) => (
-        <SwiperSlide key={index} lazy={true}>
+      {DATA?.homepage?.welcomeBannerSlides.map((slide) => (
+        <SwiperSlide key={slide?.id || slide?.backgroundImage}>
           <div className="header-carousel-item">
             <img
               src={slide?.backgroundImage}
