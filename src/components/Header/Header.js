@@ -1,15 +1,17 @@
 import React, { useRef } from "react";
 import { NavLink } from "react-router-dom";
-import "./Header.css";
-import navLinks from "../../utils/navLink";
 import headerLogo from "../../images/dr2.jpg";
+import navLinks from "../../utils/navLink";
+import "./Header.css";
 
 const Header = () => {
   const navbarCollapseRef = useRef(null);
 
   const handleNavLinkClick = () => {
-    if (navbarCollapseRef.current && window.innerWidth < 992) { 
-      const collapseEl = new window.bootstrap.Collapse(navbarCollapseRef.current);
+    if (navbarCollapseRef.current && window.innerWidth < 992) {
+      const collapseEl = new window.bootstrap.Collapse(
+        navbarCollapseRef.current
+      );
       collapseEl.hide();
     }
   };
@@ -30,7 +32,11 @@ const Header = () => {
         >
           <span className="fa fa-bars" />
         </button>
-        <div className="collapse navbar-collapse" id="navbarCollapse" ref={navbarCollapseRef}>
+        <div
+          className="collapse navbar-collapse"
+          id="navbarCollapse"
+          ref={navbarCollapseRef}
+        >
           <div className="navbar-nav ms-auto py-0">
             {navLinks?.map((link) => (
               <NavLink

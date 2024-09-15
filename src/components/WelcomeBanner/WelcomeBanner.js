@@ -8,7 +8,7 @@ import "./WelcomeBanner.css";
 const WelcomeBanner = () => {
   return (
     <Swiper
-      spaceBetween={10}
+      spaceBetween={1}
       slidesPerView={1}
       autoplay={{ delay: 8000, disableOnInteraction: false }}
       modules={[Autoplay, Navigation]}
@@ -16,7 +16,7 @@ const WelcomeBanner = () => {
       speed={2000}
       navigation={{
         prevEl: ".swiper-button-prev",
-        nextEl: ".swiper-button-next"
+        nextEl: ".swiper-button-next",
       }}
       className="header-carousel"
     >
