@@ -11,19 +11,19 @@ const quotes = [
     id: 1,
     image: quote1,
     lightboxId: "Gallery-1",
-    colSize: 6,
+    colSize: 4,
   },
   {
     id: 2,
     image: quote2,
     lightboxId: "Gallery-2",
-    colSize: 3,
+    colSize: 4,
   },
   {
     id: 3,
     image: quote3,
     lightboxId: "Gallery-3",
-    colSize: 3,
+    colSize: 4,
   },
 ];
 
@@ -44,7 +44,7 @@ const QuotesPage = () => {
           <h4 className="text-primary">Dr. Sloka's</h4>
           <h1 className="display-5 mb-4">TRENDING QUOTES</h1>
         </div>
-        <div className="row g-4">
+        <div className="row g-4 justify-content-center">
           {quotes.map((quote, index) => (
             <QuoteItem
               key={quote.id}
