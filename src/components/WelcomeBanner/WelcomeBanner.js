@@ -39,10 +39,10 @@ const WelcomeBanner = () => {
     <Swiper
     spaceBetween={10}
     slidesPerView={1}
-    autoplay={false}
+    autoplay={{delay: 8000}}
     modules={[Autoplay, Navigation]}
     loop={true}
-    speed={500}
+    speed={2000}
     navigation={{
       prevEl: ".swiper-button-prev",
       nextEl: ".swiper-button-next",
