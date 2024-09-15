@@ -252,3 +252,17 @@ img.navbar-brand {
 .welcome-text-content {
     font-style: italic;
 }
+
+.welcome-text-style {
+  color: #ffffff; 
+}
+
+.welcome-text-content {
+  color: #f0f0f0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.welcome-text-style, .welcome-text-content {
+  font-family: 'Poppins', sans-serif; 
+}
