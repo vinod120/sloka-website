@@ -1,0 +1,8 @@
+.editor-create-btn{
+    width: fit-content;
+    margin-left: auto;
+    border: none;
+    background-color: white;
+    border: 1px solid green;
+    padding: 10px;
+}

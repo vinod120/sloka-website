@@ -52,11 +52,15 @@ function Books() {
                     </div>
                     <div className="blog-content p-4">
                       <Link to={`${index}`} className="h4 d-inline-block mb-4">
-                        {obj.title}
-                        {obj.titleSuffix ? <span style={{fontSize:"12px",fontStyle:"italic"}}>{obj.titleSuffix}</span> : null}
+                        {obj.title &&
+                          <blockquote className="blockquote text-right title m-0 p-0">
+                            <p className="mb-0 title p-0">{obj.title}</p>
+                            {obj.titleSuffix && <footer className="blockquote-footer"><cite title="Source Title title">{obj.titleSuffix}</cite></footer>}
+                          </blockquote>
+                        }
                       </Link>
                       <p className="mb-4">
-                        {obj.content?.[0].slice(0, 100)}.....
+                        {obj.description?.slice(0, 100)}.....
                       </p>
                       <Link to={`${index}`} className="btn btn-primary rounded-pill py-2 px-4">
                         Read More <i className="fas fa-arrow-right ms-2" />
@@ -85,7 +89,7 @@ const BookComponent = (bookObj) => {
     {<p className='title'>Available at</p>}
     <div className='d-flex justify-content-center gap-5'>
       {bookObj.links?.map((obj, index) => {
-        return <Link to={obj.link} target='blank' key={`link_url_${index}`}>
+        return obj.link && <Link to={obj.link} target='blank' key={`link_url_${index}`}>
           <figure className='figure link-figure-wrapper'>
             <img src={obj.image} width={100} alt={obj.alt} height={100} className="cover" />
           </figure>
