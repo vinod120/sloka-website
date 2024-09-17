@@ -58,7 +58,7 @@ function Books() {
                       <p className="mb-4">
                         {obj.content?.[0].slice(0, 100)}.....
                       </p>
-                      <Link to={`${index}`} className="btn btn-primary rounded-pill py-2 px-4">
+                      <Link to={`${index}`} className="btn btn-primary rounded-pill py-2 px-4 article-read-more">
                         Read More <i className="fas fa-arrow-right ms-2" />
                       </Link>
                     </div>
