@@ -1,0 +1,27 @@
+.editor-wrapper {
+    max-width: 1256px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-wrapper {
+    box-sizing: border-box;
+    height: 100%;
+    border-radius: 14px;
+    background-color: #f9fafb;
+    box-shadow: none;
+    text-align: center;
+    flex: none;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.card-wrapper:hover {
+    color: red;
+    border: 1px solid #d0d5dd;
+    background-color: white;
+    box-shadow: 0 2px 13px 0 lightgreen;
+}

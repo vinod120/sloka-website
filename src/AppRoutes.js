@@ -7,6 +7,7 @@ import AboutMe from "./pages/AboutMe/AboutMe";
 import Articles from "./pages/Articles/Articles";
 import HomePage from "./pages/Home/HomePage";
 import SpecializationPage from "./components/Specialization/SpecializationPage";
+import SlokaEditor from "./pages/SlokaEditor/SlokaEditor";
 
 const AppRoutes = () => {
   return (
@@ -20,6 +21,8 @@ const AppRoutes = () => {
       <Route path="/contact-us" element={<ContactForm />} />
       <Route path="/quotes" element={<QuotesPage />} />
       <Route path="/our-services" element={<SpecializationPage />} />
+      <Route path="/editor" element={<SlokaEditor />} />
+      <Route path="/editor/:id" element={<SlokaEditor />} />
     </Routes>
   );
 };
