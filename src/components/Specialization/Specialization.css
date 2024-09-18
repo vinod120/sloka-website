@@ -26,6 +26,8 @@
 .service .service-days {
   border-radius: 10px;
   background: var(--bs-white);
+  width: 60%;
+  margin: auto;
 }
 
 .service .service-item {
@@ -82,4 +84,18 @@
 
 .service .service-item:hover .service-content a.h4:hover {
   color: var(--bs-white);
+}
+.service-container {
+  border-bottom: 1px solid;
+}
+.service-days .service-container:nth-child(odd) .services-content {
+  padding-left: 0px !important;
+  border-left: 1px solid; 
+  border-right: none;
+}
+
+.service-days .service-container:nth-child(even) .services-content {
+  padding-right: 0px !important;
+  border-right: 1px solid; 
+  border-left: none;
 }

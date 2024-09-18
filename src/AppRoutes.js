@@ -6,6 +6,7 @@ import QuotesPage from "./pages/QuotesPage/QuotesPage";
 import AboutMe from "./pages/AboutMe/AboutMe";
 import Articles from "./pages/Articles/Articles";
 import HomePage from "./pages/Home/HomePage";
+import SpecializationPage from "./components/Specialization/SpecializationPage";
 
 const AppRoutes = () => {
   return (
@@ -18,6 +19,7 @@ const AppRoutes = () => {
       <Route path="/about" element={<AboutMe />} />
       <Route path="/contact-us" element={<ContactForm />} />
       <Route path="/quotes" element={<QuotesPage />} />
+      <Route path="/our-services" element={<SpecializationPage />} />
     </Routes>
   );
 };

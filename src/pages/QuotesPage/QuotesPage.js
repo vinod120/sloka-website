@@ -30,7 +30,6 @@ const quotes = [
 const QuotesPage = () => {
   useEffect(() => {
     window && window.scrollTo(0, 0)
-
   }, [])
   
   return (

@@ -16,28 +16,34 @@
         "profileImage": "https://drslokauk.netlify.app/images/header_logo.png"
       }
     ],
-    "ourServices": {
-      "therapies": [
-        { "id": 1, "name": "Mindfulness Based Cognitive Therapy" },
-        { "id": 2, "name": "Arts Therapy" },
-        { "id": 3, "name": "Compassion Focused Therapy" },
-        { "id": 4, "name": "Neuro-linguistic Programming (NLP)" },
-        { "id": 5, "name": "Progressive Muscle Relaxation Therapy" },
-        { "id": 6, "name": "Counseling" },
-        { "id": 7, "name": "Journaling" },
-        { "id": 8, "name": "Cognitive Behavioural Therapy" }
-      ],
-      "specialisms": [
-        { "id": 1, "name": "Anxiety" },
-        { "id": 2, "name": "Stress Management" },
-        { "id": 3, "name": "Obsessive Compulsive Disorder" },
-        { "id": 4, "name": "Suicide Prevention" },
-        { "id": 5, "name": "Psychosexual issues" },
-        { "id": 6, "name": "Self-esteem" },
-        { "id": 7, "name": "Panic Attacks" },
-        { "id": 8, "name": "Depression" }
-      ]
-    },
+    "ourServices": [
+      {
+        "title": "Therapies offered",
+        "data": [
+          { "id": 1, "name": "Mindfulness Based Cognitive Therapy" },
+          { "id": 2, "name": "Arts Therapy" },
+          { "id": 3, "name": "Compassion Focused Therapy" },
+          { "id": 4, "name": "Neuro-linguistic Programming (NLP)" },
+          { "id": 5, "name": "Progressive Muscle Relaxation Therapy" },
+          { "id": 6, "name": "Counseling" },
+          { "id": 7, "name": "Journaling" },
+          { "id": 8, "name": "Cognitive Behavioural Therapy" }
+        ]
+      },
+      {
+        "title": "specialisms",
+        "data": [
+          { "id": 1, "name": "Anxiety" },
+          { "id": 2, "name": "Stress Management" },
+          { "id": 3, "name": "Obsessive Compulsive Disorder" },
+          { "id": 4, "name": "Suicide Prevention" },
+          { "id": 5, "name": "Psychosexual issues" },
+          { "id": 6, "name": "Self-esteem" },
+          { "id": 7, "name": "Panic Attacks" },
+          { "id": 8, "name": "Depression" }
+        ]
+      }
+    ],
     "booksInfo": {
       "books": [
         {
@@ -68,12 +74,12 @@
       }
     ],
     "articles": [
-        {
-            "id": 1,
-            "title": "Photo Gazing Therapy",
-            "img": "/images/articles_img1.png",
-            "description": "We all know that we live every moment only once but if there’s anything that can make us relive the same moment- It’s a Photograph. The power of a single photograph is so incredible that it takes us quickly back to the same moment....."
-        }
+      {
+        "id": 1,
+        "title": "Photo Gazing Therapy",
+        "img": "/images/articles_img1.png",
+        "description": "We all know that we live every moment only once but if there’s anything that can make us relive the same moment- It’s a Photograph. The power of a single photograph is so incredible that it takes us quickly back to the same moment....."
+      }
     ]
   }
 }
