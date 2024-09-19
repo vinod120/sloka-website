@@ -14,7 +14,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, .7);
+  background: rgba(0, 0, 0, 0.7);
   z-index: 1;
 }
 
@@ -74,7 +74,8 @@
   transition: 0.5s;
 }
 
-.service .service-item:hover .service-content p, a.btn.btn-primary.rounded-pill.py-2.px-4.article-read-more:hover {
+.service .service-item:hover .service-content p,
+a.btn.btn-primary.rounded-pill.py-2.px-4.article-read-more:hover {
   color: var(--bs-white);
 }
 
@@ -90,12 +91,34 @@
 }
 .service-days .service-container:nth-child(odd) .services-content {
   padding-left: 0px !important;
-  border-left: 1px solid; 
+  border-left: 1px solid;
   border-right: none;
 }
 
 .service-days .service-container:nth-child(even) .services-content {
   padding-right: 0px !important;
-  border-right: 1px solid; 
+  border-right: 1px solid;
   border-left: none;
+}
+
+@media screen and (max-width: 427px) {
+  .service-days .service-container .services-content {
+    padding: unset !important;
+    border: none !important;
+  }
+  .service-content {
+    font-size: 12px;
+  }
+  .service-container {
+    width: 100% !important;
+    margin: auto !important;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .service .service-days {
+    width: 100%;
+    margin: 0;
+  }
 }
