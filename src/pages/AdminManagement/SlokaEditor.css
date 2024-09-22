@@ -1,0 +1,21 @@
+.card-wrapper {
+  box-sizing: border-box;
+  height: 150px;
+  border-radius: 14px;
+  text-align: center;
+  color: red;
+  border: 1px solid #d0d5dd;
+  background-color: white;
+  box-shadow: 0 2px 13px 0 lightgreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.card-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px 0 rgba(0, 128, 0, 0.2);
+}

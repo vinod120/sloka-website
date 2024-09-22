@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import DATA from "../../utils/app.json";
 import "./Books.css";
+import { AppContext } from "../../App";
 
 const BooksCarousel = () => {
-  const books = DATA?.homepage?.booksInfo?.books;
-  const bookPageTitle = DATA?.homepage?.booksInfo?.booksHeading;
+  const  {appData} = useContext(AppContext);
+  const books = appData?.books;
+  console.log("books", books)
+  const bookPageTitle = appData?.booksHomePageHeading;
 
   const slidesPerViewSetting = {
     0: { slidesPerView: 1 },
@@ -55,13 +57,13 @@ const BooksCarousel = () => {
           {books?.length > 0 &&
             books?.map((book, index) => (
               <SwiperSlide
-                key={book?.id}
+                key={index}
                 className="wow fadeInUp animated"
                 data-wow-delay={`${0.2 + index * 0.2}s`}
               >
                 <div className="attractions-item">
                   <img
-                    src={book?.img}
+                    src={book?.image?.src}
                     className="img-fluid rounded w-100"
                     alt={book?.title}
                     loading="lazy"

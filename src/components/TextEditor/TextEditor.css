@@ -1,0 +1,8 @@
+.text-area-editor-wrapper {
+    border: 1px solid lightgray;
+    padding: 1rem 0;
+}
+
+.text-area-editor {
+    padding: 0 1rem ;
+}

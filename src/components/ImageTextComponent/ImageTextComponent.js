@@ -2,7 +2,7 @@ import React from 'react'
 import './ImageTextComponent.css'
 
 function ImageTextComponent(props) {
-    const { title = "", image = {}, titleSuffix = "", content = [] } = props
+    const { title = "", image = {}, titleSuffix = "", description = "" } = props
 
     return (<div className='left-side-rigth-text-container'>
         {title &&
@@ -19,10 +19,8 @@ function ImageTextComponent(props) {
                     </figure>
                 </div>
             }
-            {content.length ? <div className='text-container-wrapper fadeInRight animated'>
-                {content.map(item =>
-                    <div dangerouslySetInnerHTML={{ __html: item }} className='right-side-content-para' />
-                )}
+            {description.length ? <div className='text-container-wrapper fadeInRight animated'>
+                    <div dangerouslySetInnerHTML={{ __html: description }} className='right-side-content-para' />
             </div> : null}
         </div>
     </div>)
