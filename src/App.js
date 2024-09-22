@@ -52,13 +52,13 @@ const App = () => {
     };
   }, []);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const data = await getJsonFromS3();
-      setAppData(data);
-    };
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const data = await getJsonFromS3();
+  //     setAppData(data);
+  //   };
+  //   fetchData();
+  // }, []);
 
   return (
     <BrowserRouter>
