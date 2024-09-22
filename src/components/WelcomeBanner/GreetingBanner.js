@@ -11,7 +11,7 @@ const GreetingBanner = () => {
           <div>I’m here to help you.</div>
         </div>
         <div className="wow fadeInUp">
-          <img src={profileImage} width={300} height={300} />
+          <img src={profileImage} width={300} height={300} alt="profile" />
         </div>
       </div>
     </div>

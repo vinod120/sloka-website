@@ -1,6 +1,5 @@
 import React from "react";
 import ContactForm from "../ContactForm/ContactForm";
-import WelcomeBanner from "../../components/WelcomeBanner/WelcomeBanner";
 import SpecializationCarousel from "../../components/Specialization/SpecializationCarousel";
 import BooksCarousel from "../Books/BooksCarousel";
 import QuotesCarousel from "../QuotesPage/QuotesCarousel";
@@ -11,7 +10,6 @@ import WelcomeBannerContent from "../../components/WelcomeBanner/WelcomeBannerCo
 const HomePage = () => {
   return (
     <>
-      {/* <WelcomeBanner /> */}
       <GreetingBanner />
       <WelcomeBannerContent />
       <SpecializationCarousel />
