@@ -8,7 +8,6 @@ import "swiper/css/autoplay";
 import { BrowserRouter } from "react-router-dom";
 import AppRoutes from "./AppRoutes";
 import DATA from "./utils/app.json";
-import { getJsonFromS3 } from "./AWS";
 
 export const AppContext = createContext();
 
@@ -52,13 +51,14 @@ const App = () => {
     };
   }, []);
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const data = await getJsonFromS3();
-  //     setAppData(data);
-  //   };
-  //   fetchData();
-  // }, []);
+  useEffect(() => {
+    // const fetchData = async () => {
+    //   const data = await getJsonFromS3();
+    //   setAppData(data);
+    // };
+    // fetchData();
+    setAppData(DATA)
+  }, []);
 
   return (
     <BrowserRouter>
