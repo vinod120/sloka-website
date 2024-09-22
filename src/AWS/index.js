@@ -1,12 +1,12 @@
 
 const AWS = require("aws-sdk");
 // // Create an S3 instance
-const BUCKET_NAME = "";
-const FILE_KEY = "";
-const ACCESS_KEY = "";
-const SECRET_ACCESS_KEY = "";
-const REGION = "";
-const VERSION = '';
+const BUCKET_NAME = "drslokabucket";
+const FILE_KEY = "app.json";
+const ACCESS_KEY = "AKIAQYEI4VCH5XELZOME";
+const SECRET_ACCESS_KEY = "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";
+const REGION = "eu-north-1";
+const VERSION = 'v4';
 
 const s3 = new AWS.S3({
   accessKeyId: ACCESS_KEY,
