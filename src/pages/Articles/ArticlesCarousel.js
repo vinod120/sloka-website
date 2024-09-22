@@ -45,6 +45,7 @@ const BlogItem = ({ imgSrc, title, description }) => {
             fetchpriority="high"
             className="img-fluid w-100 rounded-top"
             alt="Blog"
+            style={{ height: "300px" }}
           />
         </div>
         <div className="blog-content p-4">

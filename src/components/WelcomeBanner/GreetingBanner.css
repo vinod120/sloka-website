@@ -1,0 +1,50 @@
+.greeting-container {
+  background-color: #017fa1;
+  padding: 4rem 6rem;
+}
+
+.greeting-title {
+  font-size: 40pt;
+  font-family: "Nerko One", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.greeting-container img {
+  background-color: transparent; /* Ensure the background of the image remains transparent */
+}
+.greeting-content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 426px) {
+  .greeting-container {
+    width: 100%; /* Make the container full width */
+    padding: 1rem; /* Set padding to 1rem */
+  }
+
+  .greeting-content-container {
+    flex-direction: column; /* Stack the content vertically */
+    align-items: center; /* Center the text and image */
+  }
+
+  .greeting-title {
+    font-size: 16pt;
+    text-align: center; /* Center the text */
+    margin-bottom: 1rem; /* Add some space below the text */
+  }
+
+  .greeting-container img {
+    width: 100%; /* Ensure the image scales to fit the container */
+    max-width: 200px; /* Optional: Set a max-width to keep the image size reasonable */
+    height: 200px; /* Maintain the aspect ratio */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .greeting-container {
+    width: 100%; /* Make the container full width */
+    padding: 1rem; /* Set padding to 1rem */
+  } 
+}
