@@ -1,10 +1,12 @@
-import React from "react";
-import DATA from "../../utils/app.json";
+import React, { useContext } from "react";
 import "./Specialization.css";
 import SpecializationItem from "./SpecializationItem";
+import { AppContext } from "../../App";
 
 const SpecializationCarousel = () => {
-  const servicesData = DATA?.homepage?.ourServices || [];
+  const { appData } = useContext(AppContext);
+  const servicesData = appData?.ourServices || [];
+  
   return (
     <div className="container-fluid service py-5">
       <div className="container service-section py-5">

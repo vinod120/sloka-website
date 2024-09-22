@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const AdminManagement = () => {
   const cards = [
-    { path: "home", label: "Home" },
+    { path: "welcome-banner", label: "Home" },
     { path: "books", label: "Books" },
     { path: "articles", label: "Articles" },
     { path: "quotes", label: "Quotes" },

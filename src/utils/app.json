@@ -1,85 +1,126 @@
 {
-  "homepage": {
-    "welcomeBannerSlides": [
-      {
-        "id": 1,
-        "backgroundImage": "https://drslokauk.netlify.app/images/header_logo.png",
-        "title": "Hello, I’m Dr Sloka. I’m here to help you",
-        "description": "Dr. Sloka, (a pen name for Dr. Sukesh Krishna Chaitanya Loka), professionally is a Clinical Pharmacologist, a freelance Clinical Psychologist and a Medical Trainer. In short, he is a Med and Mind Mentor! By Passion, he is a poet, an artist, a writer and an author too! If your struggle is in the mind, remember that your recovery is also within your mind. Dr. Sloka guides you through the recovery process!",
-        "profileImage": "https://drslokauk.netlify.app/images/Author-Image-1.png"
+  "welcomeBannerSlides": [
+    {
+      "id": 1,
+      "backgroundImage": "https://drslokabucket.s3.eu-north-1.amazonaws.com/images/bg.png",
+      "title": "Hello, I’m Dr Sloka. I’m here to help you",
+      "description": "Dr. Sloka, (a pen name for Dr. Sukesh Krishna Chaitanya Loka), professionally is a Clinical Pharmacologist, a freelance Clinical Psychologist and a Medical Trainer. In short, he is a Med and Mind Mentor! By Passion, he is a poet, an artist, a writer and an author too! If your struggle is in the mind, remember that your recovery is also within your mind. Dr. Sloka guides you through the recovery process!",
+      "profileImage": "https://drslokabucket.s3.eu-north-1.amazonaws.com/images/profile_image.png"
+    }
+  ],
+  "ourServices": [
+    {
+      "title": "Therapies offered",
+      "data": [
+        { "id": 1, "name": "Mindfulness Based Cognitive Therapy" },
+        { "id": 2, "name": "Arts Therapy" },
+        { "id": 3, "name": "Compassion Focused Therapy" },
+        { "id": 4, "name": "Neuro-linguistic Programming (NLP)" },
+        { "id": 5, "name": "Progressive Muscle Relaxation Therapy" },
+        { "id": 6, "name": "Counseling" },
+        { "id": 7, "name": "Journaling" },
+        { "id": 8, "name": "Cognitive Behavioural Therapy" }
+      ]
+    },
+    {
+      "title": "specialisms",
+      "data": [
+        { "id": 1, "name": "Anxiety" },
+        { "id": 2, "name": "Stress Management" },
+        { "id": 3, "name": "Obsessive Compulsive Disorder" },
+        { "id": 4, "name": "Suicide Prevention" },
+        { "id": 5, "name": "Psychosexual issues" },
+        { "id": 6, "name": "Self-esteem" },
+        { "id": 7, "name": "Panic Attacks" },
+        { "id": 8, "name": "Depression" }
+      ]
+    }
+  ],
+  "booksHomePageHeading": "Transform your thoughts and life, nourish your mind and soul.<br />Explore Dr. Sloka’s books and start your journey to empower yourself!",
+  "books": [
+    {
+      "id": 1,
+      "image": {
+        "src": "/images/not_just_sadness.jpg",
+        "className": "homepage-left-side-image",
+        "alt": "not_just_sadness"
       },
-      {
-        "id": 2,
-        "backgroundImage": "https://drslokauk.netlify.app/images/Author-Image-1.png",
-        "title": "Hello, I’m Dr Sloka. I’m here to help you.",
-        "description": "Dr. Sloka, (a pen name for Dr. Sukesh Krishna Chaitanya Loka), professionally is a Clinical Pharmacologist, a freelance Clinical Psychologist and a Medical Trainer. In short, he is a Med and Mind Mentor! By Passion, he is a poet, an artist, a writer and an author too! If your struggle is in the mind, remember that your recovery is also within your mind. Dr. Sloka guides you through the recovery process!",
-        "profileImage": "https://drslokauk.netlify.app/images/header_logo.png"
-      }
-    ],
-    "ourServices": [
-      {
-        "title": "Therapies offered",
-        "data": [
-          { "id": 1, "name": "Mindfulness Based Cognitive Therapy" },
-          { "id": 2, "name": "Arts Therapy" },
-          { "id": 3, "name": "Compassion Focused Therapy" },
-          { "id": 4, "name": "Neuro-linguistic Programming (NLP)" },
-          { "id": 5, "name": "Progressive Muscle Relaxation Therapy" },
-          { "id": 6, "name": "Counseling" },
-          { "id": 7, "name": "Journaling" },
-          { "id": 8, "name": "Cognitive Behavioural Therapy" }
-        ]
-      },
-      {
-        "title": "specialisms",
-        "data": [
-          { "id": 1, "name": "Anxiety" },
-          { "id": 2, "name": "Stress Management" },
-          { "id": 3, "name": "Obsessive Compulsive Disorder" },
-          { "id": 4, "name": "Suicide Prevention" },
-          { "id": 5, "name": "Psychosexual issues" },
-          { "id": 6, "name": "Self-esteem" },
-          { "id": 7, "name": "Panic Attacks" },
-          { "id": 8, "name": "Depression" }
-        ]
-      }
-    ],
-    "booksInfo": {
-      "books": [
+      "title": "Not Just Sadness",
+      "titleSuffix": "The Silence Needs To Be Heard",
+      "description": "Depression isn’t just sadness, but is a battle that affects people from all walks of life. Yet, despite its prevalence, depression remains covered in stigma and misunderstanding. This book “Not Just Sadness: The Silence Needs to Be Heard” offers an easy understanding of the complexities of depression, from its causes to its myriad manifestations. It also gives insights into practical strategies for offering support. Through this book, the author voices out that together, we can break the stigma, and make a difference to create a mentally healthy world.",
+      "videoLink": "Joi2GoWU3JU",
+      "links": [
         {
-          "id": 1,
-          "title": "Not Just Sadness",
-          "img": "https://drslokauk.netlify.app/images/not_just_sadness.jpg"
+          "link": "https://blueroseone.com/store/product/not-just-sadness-the-silence-needs-to-be-heard",
+          "image": "/images/book_leaf.png",
+          "name": "blueroseone"
         },
         {
-          "id": 2,
-          "title": "The Unspoken Thoughts",
-          "img": "https://drslokauk.netlify.app/images/the_unspoken_thoughts.jpg"
+          "link": "https://amzn.in/d/6eCCDpT",
+          "image": "/images/amazon_logo.png",
+          "name": "amazon"
+        },
+        {
+          "image": "/images/flipkart_logo.png",
+          "link": "https://www.flipkart.com/not-just-sadness-silence-needs-heard/p/itm111d9bbc7ea30?pid=9789362614483&lid=LSTBOK9789362614483C9VTHX&marketplace=FLIPKART&cmpid=content_book_8965229628_gmc",
+          "name": "flipkart"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "links": [
+        {
+          "link": "https://amzn.eu/d/1WJz0Fp",
+          "image": "/images/amazon_logo.png",
+          "name": "amazon"
+        },
+        {
+          "link": "https://ebooks.bookleafpub.com/product-page/the-unspoken-thoughts",
+          "image": "/images/book_leaf.png",
+          "name": "blueroseone"
+        },
+        {
+          "image": "/images/flipkart_logo.png",
+          "link": "",
+          "name": "flipkart"
         }
       ],
-      "booksHeading": "Transform your thoughts and life, nourish your mind and soul.<br />Explore Dr. Sloka’s books and start your journey to empower yourself!"
+      "image": {
+        "src": "/images/the_unspoken_thoughts.jpg",
+        "className": "homepage-left-side-image",
+        "alt": "the_unspoken_thoughts"
+      },
+      "title": "The Unspoken Thoughts",
+      "description": "I am a firm believer that we cannot control our thoughts and they're like the flow of a river, sometimes cool and calm, sometimes rippling. Once we tend to start accepting, acknowledging them as the way they're and reflecting on them, the beauty in them is felt and they become the best to lose in them. Words can be another best of our friends to add beauty to those thoughts and feelings generated by them. This book is a collection of many such unspoken thoughts passing through the layers of my mind, coated with the words and then stuck on to the paper to freeze them"
+    }
+  ],
+  "quotes": [
+    {
+      "id": 1,
+      "quote": "Read as if you're finding the writer's heart <br />Write like you're reading the reader's mind",
+      "image": "/images/quote.png",
+      "lightboxId": "Gallery-1"
     },
-    "quotes": [
-      {
-        "id": 1,
-        "quote": "Read as if you're finding the writer's heart <br />Write like you're reading the reader's mind"
-      },
-      {
-        "id": 2,
-        "quote": "Progression in Life needs Initiation <br /> The seed of Initiation is Determination"
-      },
-      {
-        "id": 3,
-        "quote": "He who dwells in the past has no pleasure <br /> He who peeps inot the future has no peace of <br />mind!!"
-      }
-    ],
-    "articles": [
-      {
-        "id": 1,
-        "title": "Photo Gazing Therapy",
-        "img": "/images/articles_img1.png",
-        "description": "We all know that we live every moment only once but if there’s anything that can make us relive the same moment- It’s a Photograph. The power of a single photograph is so incredible that it takes us quickly back to the same moment....."
-      }
-    ]
-  }
+    {
+      "id": 2,
+      "quote": "Progression in Life needs Initiation <br /> The seed of Initiation is Determination",
+      "image": "/images/quote2.png",
+      "lightboxId": "Gallery-2"
+    },
+    {
+      "id": 3,
+      "quote": "He who dwells in the past has no pleasure <br /> He who peeps inot the future has no peace of <br />mind!!",
+      "image": "/images/quote3.png",
+      "lightboxId": "Gallery-3"
+    }
+  ],
+  "articles": [
+    {
+      "id": 1,
+      "title": "Photo Gazing Therapy",
+      "img": "/images/articles_img1.png",
+      "description": "We all know that we live every moment only once but if there’s anything that can make us relive the same moment- It’s a Photograph. The power of a single photograph is so incredible that it takes us quickly back to the same moment....."
+    }
+  ]
 }

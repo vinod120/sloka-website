@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react'
 import './Books.css'
 import ImageTextComponent from '../../components/ImageTextComponent/ImageTextComponent'
-import sloka from '../sloka.json'
+import DATA from '../../utils/app.json';
 import { Link, useParams } from 'react-router-dom'
 import '../Articles/Articles.css'
 
-const books = sloka.books
+const books = DATA.books
 
 function Books() {
   const { id } = useParams()

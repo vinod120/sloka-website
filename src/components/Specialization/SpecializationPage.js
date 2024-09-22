@@ -1,10 +1,11 @@
-import React, { useEffect } from "react";
-import DATA from "../../utils/app.json";
+import React, { useContext, useEffect } from "react";
 import "./Specialization.css";
 import SpecializationItem from "./SpecializationItem";
+import { AppContext } from "../../App";
 
 const Specialization = () => {
-  const servicesData = DATA?.homepage?.ourServices || [];
+  const { appData } = useContext(AppContext);
+  const servicesData = appData?.ourServices || [];
   
   useEffect(() => {
     window && window.scrollTo(0, 0)

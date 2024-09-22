@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import DATA from "../../utils/app.json";
 import "./Articles";
+import { AppContext } from "../../App";
 
 const ArticlesCarousel = () => {
+  const {appData} = useContext(AppContext);
+  const articlesData = appData?.articles
   return (
     <div className="container-fluid blog py-5">
       <div className="container py-5">
@@ -15,8 +17,8 @@ const ArticlesCarousel = () => {
           <h1 className="display-5 mb-4">Latest Blog & Articles</h1>
         </div>
         <div className="row g-4 justify-content-center wow fadeInUp animated">
-          {DATA?.homepage?.articles?.length > 0 &&
-            DATA?.homepage?.articles?.map((article, index) => (
+          {articlesData?.length > 0 &&
+            articlesData?.map((article, index) => (
               <BlogItem
                 key={article?.id}
                 imgSrc={article?.img}

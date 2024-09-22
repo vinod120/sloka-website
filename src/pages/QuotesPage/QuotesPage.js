@@ -1,37 +1,15 @@
-import React,{useEffect} from "react";
+import React, { useContext, useEffect } from "react";
 import "./QuotesPage.css";
 import QuoteItem from "./QuoteItem";
-import quote1 from "../../images/quote.png"
-import quote2 from "../../images/quote2.png"
-import quote3 from "../../images/quote3.png"
-
-
-const quotes = [
-  {
-    id: 1,
-    image: quote1,
-    lightboxId: "Gallery-1",
-    colSize: 4,
-  },
-  {
-    id: 2,
-    image: quote2,
-    lightboxId: "Gallery-2",
-    colSize: 4,
-  },
-  {
-    id: 3,
-    image: quote3,
-    lightboxId: "Gallery-3",
-    colSize: 4,
-  },
-];
+import { AppContext } from "../../App";
 
 const QuotesPage = () => {
+  const { appData } = useContext(AppContext);
+  const quotesData = appData?.quotes;
   useEffect(() => {
-    window && window.scrollTo(0, 0)
-  }, [])
-  
+    window && window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="container-fluid gallery py-5">
       <div className="container pb-5">
@@ -44,15 +22,16 @@ const QuotesPage = () => {
           <h1 className="display-5 mb-4">TRENDING QUOTES</h1>
         </div>
         <div className="row g-4 justify-content-center">
-          {quotes.map((quote, index) => (
-            <QuoteItem
-              key={quote.id}
-              image={quote.image}
-              lightboxId={quote.lightboxId}
-              delay={0.2 + index * 0.2}
-              colSize={quote.colSize}
-            />
-          ))}
+          {quotesData?.length > 0 &&
+            quotesData?.map((quote, index) => (
+              <QuoteItem
+                key={quote.id}
+                image={quote.image}
+                lightboxId={quote.lightboxId}
+                delay={0.2 + index * 0.2}
+                colSize="4"
+              />
+            ))}
         </div>
       </div>
     </div>

@@ -1,45 +1,37 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
-const ImageUpload = ({ defaultImage }) => {
-    const [image, setImage] = useState(null);
-    const [preview, setPreview] = useState(defaultImage.src);
+const ImageUpload = ({ defaultImage = {}, onImgChange = () => {} }) => {
+  const [preview, setPreview] = useState(defaultImage?.src || null);
 
-    const handleFileChange = (event) => {
-        const file = event.target.files[0];
-        if (file) {
-            setImage(file);
+  const handleFileChange = async (event) => {
+    if (!event.target.files[0]) return alert('please select image')
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setPreview(reader.result);
+      };
+      reader.readAsDataURL(file);
+      onImgChange(file);
+    }
+  };
 
-            const reader = new FileReader();
-            reader.onloadend = () => {
-                setPreview(reader.result);
-            };
-            reader.readAsDataURL(file);
-        }
-    };
-
-    const handleUpload = () => {
-        if (!image) return;
-
-        const formData = new FormData();
-        formData.append('file', image);
-    };
-    useEffect(() => {
-        setPreview(defaultImage.src)
-    }, [defaultImage.src])
-
-    return (
-        <div className='my-4'>
-            <div className='d-flex align-items-center'>
-                <input type="file" accept="image/*" onChange={handleFileChange} />
-                {preview && (
-                    <div className='my-4'>
-                        <img src={preview} alt="Selected" style={{ width: '300px', height: 'auto' }} />
-                    </div>
-                )}
-            </div>
-            <button onClick={handleUpload} className='my-4 p-2'>Upload Image</button>
-        </div>
-    );
+  return (
+    <div className="my-4">
+      <div className="d-flex align-items-center justify-content-between">
+        <input type="file" accept="image/*" onChange={handleFileChange} />
+        {preview && (
+          <div className="my-4">
+            <img
+              src={preview}
+              alt="Selected"
+              style={{ width: "300px", height: "auto" }}
+            />
+          </div>
+        )}
+      </div>
+    </div>
+  );
 };
 
-export default ImageUpload
+export default ImageUpload;

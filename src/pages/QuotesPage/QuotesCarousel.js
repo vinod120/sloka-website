@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import DATA from "../../utils/app.json";
 import "./QuotesPage.css";
+import { AppContext } from "../../App";
 
 const QuotesCarousel = () => {
   const navigate = useNavigate();
+  const {appData} = useContext(AppContext);
+  const quotesData = appData?.quotes
 
   const handleClick = () => {
     navigate("/quotes");
@@ -36,8 +38,8 @@ const QuotesCarousel = () => {
             nextEl: ".swiper-button-next"
           }}
         >
-          {DATA?.homepage?.quotes?.length > 0 &&
-            DATA?.homepage?.quotes.map((item, index) => (
+          {quotesData?.length > 0 &&
+            quotesData?.map((item, index) => (
               <SwiperSlide
                 key={item?.id}
                 className="testimonial-carousel cursor-pointer"
