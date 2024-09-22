@@ -11,7 +11,7 @@
 }
 
 .greeting-container img {
-  background-color: transparent; /* Ensure the background of the image remains transparent */
+  background-color: transparent;
 }
 .greeting-content-container {
   display: flex;
@@ -20,31 +20,31 @@
 }
 @media screen and (max-width: 426px) {
   .greeting-container {
-    width: 100%; /* Make the container full width */
-    padding: 1rem; /* Set padding to 1rem */
+    width: 100%;
+    padding: 1rem;
   }
 
   .greeting-content-container {
-    flex-direction: column; /* Stack the content vertically */
-    align-items: center; /* Center the text and image */
+    flex-direction: column;
+    align-items: center;
   }
 
   .greeting-title {
     font-size: 16pt;
-    text-align: center; /* Center the text */
-    margin-bottom: 1rem; /* Add some space below the text */
+    text-align: center;
+    margin-bottom: 1rem;
   }
 
   .greeting-container img {
-    width: 100%; /* Ensure the image scales to fit the container */
-    max-width: 200px; /* Optional: Set a max-width to keep the image size reasonable */
-    height: 200px; /* Maintain the aspect ratio */
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .greeting-container {
-    width: 100%; /* Make the container full width */
-    padding: 1rem; /* Set padding to 1rem */
+    width: 100%;
+    padding: 1rem;
   } 
 }
