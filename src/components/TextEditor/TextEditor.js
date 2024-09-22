@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { EditorState, convertToRaw, Modifier, ContentState } from "draft-js";
+import { EditorState, Modifier, ContentState } from "draft-js";
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
-import draftToHtml from "draftjs-to-html";
 import { Editor } from "react-draft-wysiwyg";
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 import "./TextEditor.css";
