@@ -1,6 +1,7 @@
 import React from "react";
 import "./GreetingBanner.css";
 import profileImage from "../../images/dr2_transparent_background_v2.png";
+import "./WelcomeBanner.css";
 
 const GreetingBanner = () => {
   return (
