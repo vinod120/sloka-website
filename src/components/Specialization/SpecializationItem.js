@@ -28,9 +28,7 @@ const SpecializationItem = ({ title = "", data = [], isOdd, isFullPage }) => {
 
         {!isFullPage && (
           <div
-            className={`see-more-container mt-3 ${
-              isOdd ? "text-start" : "text-end"
-            }`}
+            className={`see-more-container mt-3 mb-3 text-center`}
           >
             <Link to="/our-services" className="text-primary fw-bold">
               See More
