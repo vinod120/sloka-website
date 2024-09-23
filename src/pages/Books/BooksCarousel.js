@@ -8,7 +8,6 @@ import { AppContext } from "../../App";
 const BooksCarousel = () => {
   const  {appData} = useContext(AppContext);
   const books = appData?.books;
-  console.log("books", books)
   const bookPageTitle = appData?.booksHomePageHeading;
 
   const slidesPerViewSetting = {

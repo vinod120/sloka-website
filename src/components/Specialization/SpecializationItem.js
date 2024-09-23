@@ -21,7 +21,7 @@ const SpecializationItem = ({ title = "", data = [], isOdd, isFullPage }) => {
       >
         {data?.length > 0 &&
           data.map((item, index) => (
-            <div key={index} className="py-2 border-bottom">
+            <div key={index} className="py-2">
               {item.name}
             </div>
           ))}
