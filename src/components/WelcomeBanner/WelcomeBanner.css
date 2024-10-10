@@ -245,9 +245,8 @@ img.navbar-brand {
   margin-right: 40px !important;
 }
 .welcome-text-style {
-  font-weight: bold;
   font-style: italic;
-  font-size: xx-large;
+  font-size: 3rem;
 }
 .welcome-text-content {
     font-style: italic;

@@ -15,7 +15,8 @@ const SpecializationCarousel = () => {
           data-wow-delay="0.2s"
           style={{ maxWidth: "800px" }}
         >
-          <h4 className="text-white">Our Service</h4>
+          <h4 className="text-primary">Dr. Sloka's</h4>
+          <h1 className="display-5 text-white mb-4">Services</h1>
         </div>
         <div className="service-days px-2">
           {servicesData?.length > 0 &&
