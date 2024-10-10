@@ -10,9 +10,11 @@ const SpecializationItem = ({ title = "", data = [], isOdd, isFullPage }) => {
           isOdd ? "order-md-2" : "order-md-1"
         }`}
       >
-        <h4 className="text-center text-primary m-4 fw-bold">
-          {capitalizeEachWord(title)}
-        </h4>
+        <Link to="/our-services">
+          <h4 className="text-center text-primary m-4 fw-bold">
+            {capitalizeEachWord(title)}
+          </h4>
+        </Link>
       </div>
       <div
         className={`col-12 col-md-7 col-lg-7 col-xl-7 services-content order-2 ${
@@ -27,9 +29,7 @@ const SpecializationItem = ({ title = "", data = [], isOdd, isFullPage }) => {
           ))}
 
         {!isFullPage && (
-          <div
-            className={`see-more-container mt-3 mb-3 text-center`}
-          >
+          <div className={`see-more-container mt-3 mb-3 text-center`}>
             <Link to="/our-services" className="text-primary fw-bold">
               See More
             </Link>

@@ -12,13 +12,10 @@ const QuoteItem = ({ image, lightboxId, delay, colSize }) => {
           decoding="async" 
           fetchpriority="high"
         />
-        <div className="search-icon">
-          <a
-            href={image}
-            className="btn btn-light btn-lg-square rounded-circle"
-            data-lightbox={lightboxId}
-          >
-            <i className="fas fa-search-plus" />
+        {/* Download icon */}
+        <div className="download-icon">
+          <a href={image} download className="btn btn-light btn-lg-square rounded-circle">
+            <i className="fas fa-download" />
           </a>
         </div>
       </div>
