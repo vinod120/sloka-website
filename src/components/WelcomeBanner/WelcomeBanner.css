@@ -265,3 +265,9 @@ img.navbar-brand {
 .welcome-text-style, .welcome-text-content {
   font-family: 'Poppins', sans-serif; 
 }
+@media screen and (max-width: 420px) {
+  .welcome-text-style {
+    font-size: 25px;
+    margin-bottom: 16px;
+  }
+}
