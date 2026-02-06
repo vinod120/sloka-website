@@ -15,10 +15,10 @@ const Footer = () => {
           <div className="col-md-6 col-lg-6 col-xl-4 order-1 order-md-1 order-lg-1">
             <div className="footer-item">
                 <h4 className="text-white mb-4">
-                  Sri Gowri
+                  Dr. Sloka
                 </h4>
               <p className="mb-2">
-              Sri Gowri, a pen name for Dr. Sukesh Krishna Chaitanya Loka, professionally is a Clinical Pharmacologist and a freelance Clinical Psychologist.
+              Dr. Sloka, a pen name for Dr. Sukesh Krishna Chaitanya Loka, professionally is a Clinical Pharmacologist and a freelance Clinical Psychologist.
               </p>
               <div className="sloka-sign-text">--Dr.Sloka</div>
               <div className="d-flex align-items-center">
