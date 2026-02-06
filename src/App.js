@@ -1,12 +1,12 @@
-import React, { createContext, useEffect, useState } from "react";
-import Layout from "./components/Layout/Layout";
-import "./common/styles.css";
-import WOW from "wowjs";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/autoplay";
+import { createContext, useEffect, useState } from "react";
 import { BrowserRouter } from "react-router-dom";
+import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/navigation";
+import WOW from "wowjs";
 import AppRoutes from "./AppRoutes";
+import "./common/styles.css";
+import Layout from "./components/Layout/Layout";
 import DATA from "./utils/app.json";
 
 export const AppContext = createContext();

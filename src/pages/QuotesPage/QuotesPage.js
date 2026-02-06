@@ -1,7 +1,7 @@
-import React, { useContext, useEffect } from "react";
-import "./QuotesPage.css";
-import QuoteItem from "./QuoteItem";
+import { useContext, useEffect } from "react";
 import { AppContext } from "../../App";
+import QuoteItem from "./QuoteItem";
+import "./QuotesPage.css";
 
 const QuotesPage = () => {
   const { appData } = useContext(AppContext);
@@ -18,7 +18,7 @@ const QuotesPage = () => {
           data-wow-delay="0.2s"
           style={{ maxWidth: "800px" }}
         >
-          <h4 className="text-primary">Dr. Sloka's</h4>
+          <h4 className="text-primary">Sri Gowri's</h4>
           <h1 className="display-5 mb-4">TRENDING QUOTES</h1>
         </div>
         <div className="row g-4 justify-content-center">

@@ -1,7 +1,7 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
+import { AppContext } from "../../App";
 import "./Specialization.css";
 import SpecializationItem from "./SpecializationItem";
-import { AppContext } from "../../App";
 
 const SpecializationCarousel = () => {
   const { appData } = useContext(AppContext);
@@ -15,7 +15,7 @@ const SpecializationCarousel = () => {
           data-wow-delay="0.2s"
           style={{ maxWidth: "800px" }}
         >
-          <h4 className="text-primary">Dr. Sloka's</h4>
+          <h4 className="text-primary">Sri Gowri's</h4>
           <h1 className="display-5 text-white mb-4">Services</h1>
         </div>
         <div className="service-days px-2">

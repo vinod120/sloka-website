@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import "./AboutMe.css";
 
 const AboutMe = () => {
@@ -27,13 +27,13 @@ const AboutMe = () => {
         <div className="about-text fadeInRight animated">
           <div className="about-text-content">
             <p>
-              Dr. Sloka, a pen name for Dr. Sukesh Krishna Chaitanya Loka,
+              Sri Gowri, a pen name for Dr. Sukesh Krishna Chaitanya Loka,
               professionally is a Clinical Pharmacologist and a freelance Clinical
               Psychologist. In short, he is a Med and Mind Mentor! By Passion, he
               is a poet, artist, writer and now, an author too!
             </p>
             <p>
-              Dr. Sloka carries with him over 9+ years of experience in providing
+              Sri Gowri carries with him over 9+ years of experience in providing
               Medication Therapy Management services across various specialties
               such as Allergy and Immunology, Critical Care, General Medicine,
               Nephrology, Oncology, Organ Transplantation, Pulmonology, and many
@@ -64,7 +64,7 @@ const AboutMe = () => {
               Counselling, arts therapy, and psychosexual therapy.
             </p>
             <p>
-              Dr. Sloka has worked with clients facing an array of mental health
+              Sri Gowri has worked with clients facing an array of mental health
               challenges, including anxiety, depression, panic attacks, and
               obsessive-compulsive disorder (OCD), stress, relationship
               difficulties, and sexual issues and many others.
@@ -75,7 +75,7 @@ const AboutMe = () => {
               into the impact of managerial personalities on the job satisfaction
               of employees in the workplace. This exploration illustrates his
               commitment to fostering healthier and more harmonious work
-              environments. Dr. Sloka has also presented numerous lectures on the
+              environments. Sri Gowri has also presented numerous lectures on the
               subject of mental health, further contributing to the awareness on
               mental well-being.
             </p>

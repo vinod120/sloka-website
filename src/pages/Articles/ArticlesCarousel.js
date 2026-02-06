@@ -1,7 +1,7 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
-import "./Articles";
 import { AppContext } from "../../App";
+import "./Articles";
 
 const ArticlesCarousel = () => {
   const {appData} = useContext(AppContext);
@@ -13,7 +13,7 @@ const ArticlesCarousel = () => {
           className="text-center mx-auto pb-5 wow fadeInUp animated"
           style={{ maxWidth: "800px" }}
         >
-          <h4 className="text-primary">Dr. Sloka's</h4>
+          <h4 className="text-primary">Sri Gowri's</h4>
           <h1 className="display-5 mb-4">Latest Blog & Articles</h1>
         </div>
         <div className="row g-4 justify-content-center wow fadeInUp animated">

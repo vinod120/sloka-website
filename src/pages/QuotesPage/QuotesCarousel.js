@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "./QuotesPage.css";
 import { AppContext } from "../../App";
+import "./QuotesPage.css";
 
 const QuotesCarousel = () => {
   const navigate = useNavigate();
@@ -21,7 +21,7 @@ const QuotesCarousel = () => {
           className="text-center mx-auto pb-5 wow fadeInUp animated"
           style={{ maxWidth: "800px" }}
         >
-          <h4 className="text-primary">Dr. Sloka's</h4>
+          <h4 className="text-primary">Sri Gowri's</h4>
           <h1 className="display-5 text-white mb-4">TRENDING QUOTES</h1>
         </div>
         <Swiper

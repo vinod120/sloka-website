@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { NavLink } from "react-router-dom";
 import headerLogo from "../../images/dr2.jpg";
 import navLinks from "../../utils/navLink";
@@ -21,7 +21,7 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg navbar-light">
         <NavLink to="/" className="navbar-brand p-0">
           <div className="text-dark header-logo-container d-flex align-items-center">
-            <img src={headerLogo} alt="header-logo" /> Dr. Sloka
+            <img src={headerLogo} alt="header-logo" /> Sri Gowri
           </div>
         </NavLink>
         <button

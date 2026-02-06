@@ -1,6 +1,6 @@
 const socialLinks = [
   {
-    path: "https://instagram.com",
+    path: "https://www.instagram.com/yours_vinodh",
     icon: "fab fa-instagram"
   },
   {

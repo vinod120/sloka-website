@@ -1,8 +1,7 @@
-import React from "react";
-import "./Footer.css"; // Import the CSS file
 import { NavLink } from "react-router-dom";
 import navLinks from "../../utils/navLink";
 import socialLinks from "../../utils/socialLinks";
+import "./Footer.css"; // Import the CSS file
 
 const Footer = () => {
   
@@ -16,10 +15,10 @@ const Footer = () => {
           <div className="col-md-6 col-lg-6 col-xl-4 order-1 order-md-1 order-lg-1">
             <div className="footer-item">
                 <h4 className="text-white mb-4">
-                  Dr. Sloka
+                  Sri Gowri
                 </h4>
               <p className="mb-2">
-              Dr. Sloka, a pen name for Dr. Sukesh Krishna Chaitanya Loka, professionally is a Clinical Pharmacologist and a freelance Clinical Psychologist.
+              Sri Gowri, a pen name for Dr. Sukesh Krishna Chaitanya Loka, professionally is a Clinical Pharmacologist and a freelance Clinical Psychologist.
               </p>
               <div className="sloka-sign-text">--Dr.Sloka</div>
               <div className="d-flex align-items-center">
